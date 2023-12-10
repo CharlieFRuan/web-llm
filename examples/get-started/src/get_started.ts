@@ -16,6 +16,9 @@ async function main() {
   });
 
   await chat.reload("music-medium-800k-q0f32");
+  // await chat.reload("music-medium-800k-q0f16");
+  // await chat.reload("music-small-800k-q0f32");
+  // await chat.reload("music-small-800k-q0f16");
 
   const generateProgressCallback = (_step: number, message: string) => {
     setLabel("generate-label", message);
