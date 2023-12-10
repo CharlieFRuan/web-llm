@@ -342,6 +342,62 @@ export class LLMChatPipeline {
     }
   }
 
+  async forwardWrapper(
+    inputIds: Array<number>, curPos: number, isPrefill: boolean
+  ): Promise<Float32Array> {
+    // 1. Convert input to NDArray
+    const tstart = performance.now();
+    this.tvm.beginScope();
+    const inputData = this.tvm.empty([1, inputIds.length], "int32", this.device);
+    inputData.copyFrom(inputIds);
+
+    // 2. Forward tokens and get logits
+    const logitsOnGPU: tvmjs.NDArray = this.forward(inputData, curPos);
+    const logitsOnCPU = this.updateLogitsOnCPU(logitsOnGPU);
+    this.tvm.endScope();
+    await this.device.sync();
+
+    // 3. Stats
+    const tend = performance.now();
+    if (isPrefill) {
+      // We assume that if the input has more than 1 token
+      this.prefillTotalTime += (tend - tstart) / 1e3;
+      this.prefillTotalTokens += inputIds.length;
+    } else {
+      this.decodingTotalTime += (tend - tstart) / 1e3;
+      this.decodingTotalTokens += 1;
+    }
+    return <Float32Array>(logitsOnCPU.toArray());
+  }
+
+  async forwardTokensAndSample(
+    inputIds: Array<number>, curPos: number, isPrefill: boolean
+  ): Promise<number> {
+    // 1. Convert input to NDArray
+    const tstart = performance.now();
+    this.tvm.beginScope();
+    const inputData = this.tvm.empty([1, inputIds.length], "int32", this.device);
+    inputData.copyFrom(inputIds);
+
+    // 2. Forward tokens and get logits
+    const logitsOnGPU: tvmjs.NDArray = this.forward(inputData, curPos);
+    const nextToken = await this.sampleTokenFromLogits(
+      logitsOnGPU, this.config.temperature, this.config.top_p);
+    this.tvm.endScope();
+
+    // 3. Stats
+    const tend = performance.now();
+    if (isPrefill) {
+      // We assume that if the input has more than 1 token
+      this.prefillTotalTime += (tend - tstart) / 1e3;
+      this.prefillTotalTokens += inputIds.length;
+    } else {
+      this.decodingTotalTime += (tend - tstart) / 1e3;
+      this.decodingTotalTokens += 1;
+    }
+    return nextToken;
+  }
+
   private forward(inputs: tvmjs.NDArray, curPos: number): tvmjs.NDArray {
     this.tvm.beginScope();
     let retValue;

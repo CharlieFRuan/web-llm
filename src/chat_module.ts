@@ -180,6 +180,42 @@ export class ChatModule implements ChatInterface {
     return this.getMessage();
   }
 
+  /**
+   * Forward the given input tokens to the model, return the last token's logits.
+   *
+   * This function has side effects as the model will update its KV cache.
+   *
+   * @param inputIds The input tokens.
+   * @param curPos Total number of tokens processed, including the inputIds (i.e.
+   * number of tokens in KV cache plus number of tokens in inputIds).
+   * @param isPrefill True if prefill, false if decode; only used for statistics.
+   * 
+   * @returns The logits of the last token.
+   */
+  async forwardTokens(
+    inputIds: Array<number>, curPos: number, isPrefill: boolean
+  ): Promise<Float32Array> {
+    return this.getPipeline().forwardWrapper(inputIds, curPos, isPrefill);
+  }
+
+  /**
+   * Forward the given input tokens to the model, then sample the next token.
+   *
+   * This function has side effects as the model will update its KV cache.
+   *
+   * @param inputIds The input tokens.
+   * @param curPos Total number of tokens processed, including the inputIds (i.e.
+   * number of tokens in KV cache plus number of tokens in inputIds).
+   * @param isPrefill True if prefill, false if decode; only used for statistics.
+   * 
+   * @returns Next token sampled.
+   */
+  async forwardTokensAndSample(
+    inputIds: Array<number>, curPos: number, isPrefill: boolean
+  ): Promise<number> {
+    return this.getPipeline().forwardTokensAndSample(inputIds, curPos, isPrefill);
+  }
+
   async interruptGenerate() {
     this.interruptSignal = true;
   }

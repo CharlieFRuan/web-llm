@@ -15,21 +15,30 @@ async function main() {
     setLabel("init-label", report.text);
   });
 
-  await chat.reload("Llama-2-7b-chat-hf-q4f32_1");
+  await chat.reload("music-medium-800k-q0f32");
 
   const generateProgressCallback = (_step: number, message: string) => {
     setLabel("generate-label", message);
   };
 
-  const prompt0 = "What is the capital of Canada?";
-  setLabel("prompt-label", prompt0);
-  const reply0 = await chat.generate(prompt0, generateProgressCallback);
-  console.log(reply0);
+  // Get next logits
+  // const firstToken: Array<number> = [55026];
+  // setLabel("prompt-label", firstToken.toString());
+  // const logits = await chat.forwardTokens(firstToken, 1, isPrefill=true);
+  // console.log(logits);
 
-  const prompt1 = "Can you write a poem about it?";
-  setLabel("prompt-label", prompt1);
-  const reply1 = await chat.generate(prompt1, generateProgressCallback);
-  console.log(reply1);
+  // Get next token
+  const prompt: Array<number> = [55026];
+  setLabel("prompt-label", prompt.toString());
+  let nextToken = await chat.forwardTokensAndSample(prompt, prompt.length, isPrefill = true);
+  console.log(nextToken);
+
+  let counter = prompt.length;
+  while (counter < 64) {
+    counter += 1;
+    nextToken = await chat.forwardTokensAndSample([nextToken], counter, isPrefill = false);
+    console.log(nextToken);
+  }
 
   console.log(await chat.runtimeStatsText());
 }
