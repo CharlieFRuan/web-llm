@@ -59,7 +59,8 @@ type MessageContent =
   InitProgressReport |
   string |
   null |
-  number;
+  number |
+  Array<number>;
 
 /**
  * The message used in exchange between worker

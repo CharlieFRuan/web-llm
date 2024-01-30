@@ -14,12 +14,24 @@ class CustomChatWorkerClient extends webllm.ChatWorkerClient {
     super(worker);
   }
 
-  async chunkGenerate(): Promise<void> {
+  async chunkGenerate(): Promise<Array<number>> {
     const msg: webllm.WorkerMessage = {
       kind: "customRequest",
       uuid: crypto.randomUUID(),
       content: {
         requestName: "chunkGenerate",
+        requestMessage: ""
+      }
+    };
+    return await this.getPromise<Array<number>>(msg);
+  }
+
+  async resetGenerator(): Promise<void> {
+    const msg: webllm.WorkerMessage = {
+      kind: "customRequest",
+      uuid: crypto.randomUUID(),
+      content: {
+        requestName: "resetGenerator",
         requestMessage: ""
       }
     };
@@ -53,9 +65,41 @@ async function main() {
 
   // Reload chat module with a logit processor
   await chat.reload("music-medium-800k-q0f32", undefined, myAppConfig);
-  await chat.chunkGenerate();
 
-  console.log(await chat.runtimeStatsText());
+  let generationStopped = true;
+
+  const startButton = document.getElementById("startButton");
+  const pauseButton = document.getElementById("pauseButton");
+  const resetButton = document.getElementById("resetButton");
+
+  if (startButton) {
+    startButton.addEventListener("click", async () => {
+      generationStopped = false;
+
+      while (!generationStopped) {
+        const tokens = await chat.chunkGenerate();
+        console.log("UI: received generated tokens: ");
+        console.log(tokens);
+        console.log(await chat.runtimeStatsText());
+      }
+    });
+  }
+
+  if (pauseButton) {
+    pauseButton.addEventListener("click", async () => {
+      generationStopped = true;
+      console.log("UI: Pausing generator");
+    });
+  }
+
+  if (resetButton) {
+    resetButton.addEventListener("click", async () => {
+      generationStopped = true;
+      console.log("UI: Reset generator");
+      await chat.resetChat();
+      await chat.resetGenerator();
+    });
+  }
 }
 
 main();
