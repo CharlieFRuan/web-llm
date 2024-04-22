@@ -16,7 +16,7 @@ export class TextStreamer {
   private finished = false;
 
   // REPLACEMENT CHARACTER (U+FFFD) in UTF-8.
-  readonly kReplacementCharacter = "\xef\xbf\xbd";
+  readonly kReplacementCharacter = "�";
 
   constructor(tokenizer: Tokenizer) {
     this.tokenizer = tokenizer;
@@ -56,14 +56,14 @@ export class TextStreamer {
       let validated_str: string;
       const new_pending_tokens: number[] = [];
 
-      console.log("=====================");
-      console.log("prefix_tokens: " + this.prefix_tokens);
-      console.log("pending_tokens: " + this.pending_tokens);
-      console.log("prefix_str: " + prefix_str);
-      console.log("full_str: " + full_str);
+      // console.log("=====================");
+      // console.log("prefix_tokens: " + this.prefix_tokens);
+      // console.log("pending_tokens: " + this.pending_tokens);
+      // console.log("prefix_str: " + prefix_str);
+      // console.log("full_str: " + full_str);
 
       if (full_str.startsWith(prefix_str)) {
-        console.log("CASE 1");
+        // console.log("CASE 1");
         // Case 1. prefix_str is a prefix of full_str.
         validated_str = full_str.substring(prefix_str.length);
 
@@ -71,22 +71,22 @@ export class TextStreamer {
         // - The UTF-8 replacement character take 3 chars.
         // - A valid UTF-8 has 4 chars at most.
         //   So there will be at most 3 tokens popped.
-        console.log("this.pending_tokens.length: " + this.pending_tokens.length);
-        console.log("new_pending_tokens.length: " + new_pending_tokens.length);
-        console.log("validated_str.length: " + validated_str.length);
-        console.log("validated_str.substring(validated_str.length - 3): " + validated_str.substring(validated_str.length - 3));
-        console.log("validated_str.substring(validated_str.length - 3) === this.kReplacementCharacter: " + validated_str.substring(validated_str.length - 3) === this.kReplacementCharacter);
+        // console.log("this.pending_tokens.length: " + this.pending_tokens.length);
+        // console.log("new_pending_tokens.length: " + new_pending_tokens.length);
+        // console.log("validated_str.length: " + validated_str.length);
+        // console.log("validated_str.substring(validated_str.length - 1): " + validated_str.substring(validated_str.length - 1));
+        // console.log("validated_str.substring(validated_str.length - 1) === this.kReplacementCharacter: ", validated_str.substring(validated_str.length - 1) === this.kReplacementCharacter);
 
 
         while (this.pending_tokens.length !== 0 &&
           new_pending_tokens.length < 3 &&
-          validated_str.length >= 3 &&
-          validated_str.substring(validated_str.length - 3) === this.kReplacementCharacter
+          validated_str.length >= 1 &&
+          validated_str.substring(validated_str.length - 1) === this.kReplacementCharacter
         ) {
-          new_pending_tokens.push(this.pending_tokens[-1]);
-          this.pending_tokens.pop();
-          validated_str = validated_str.substring(0, validated_str.length - 3);
-          console.log("validated_str: " + validated_str);
+          // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+          new_pending_tokens.push(this.pending_tokens.pop()!);
+          validated_str = validated_str.substring(0, validated_str.length - 1);
+          // console.log("validated_str: " + validated_str);
         }
       } else {
         // Case 2. prefix_str is not a prefix of `full_str`.
@@ -97,14 +97,14 @@ export class TextStreamer {
         // - If there are no more than 3 pending tokens, skip popping.
         //   This is because it is impossible to make full_str contain
         //   prefix_str without popping all the pending tokens.
-        console.log("CASE 2");
+        // console.log("CASE 2");
         if (this.pending_tokens.length < 3) {
           continue;
         }
         let get_valid_full_str = false;
         while (this.pending_tokens.length !== 0 && new_pending_tokens.length < 3) {
-          new_pending_tokens.push(this.pending_tokens[-1]);
-          this.pending_tokens.pop();
+          // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+          new_pending_tokens.push(this.pending_tokens.pop()!);
           all_tokens.pop();
           full_str = this.tokenizer.decode(new Int32Array(all_tokens));
           if (full_str.startsWith(prefix_str)) {
@@ -133,10 +133,9 @@ export class TextStreamer {
       this.pending_tokens = new_pending_tokens.reverse();
       ret += validated_str;
     }
-
-    console.log("prefix_tokens: " + this.prefix_tokens);
-    console.log("pending_tokens: " + this.pending_tokens);
-    console.log("ret: " + ret);
+    // console.log("prefix_tokens: " + this.prefix_tokens);
+    // console.log("pending_tokens: " + this.pending_tokens);
+    // console.log("ret: " + ret);
     return ret;
   }
 
