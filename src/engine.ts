@@ -754,8 +754,11 @@ export class MLCEngine implements MLCEngineInterface {
           message.content,
           message.name,
         );
-      } else {
-        throw new Error("Unsupported role of message: " + message.role);
+      } else if (message.role === "tool") {
+        if (typeof message.content !== "string") {
+          throw new Error("Tool message should have string content.");
+        }
+        conversation.appendMessage(Role.tool, message.content);
       }
     }
     return conversation;

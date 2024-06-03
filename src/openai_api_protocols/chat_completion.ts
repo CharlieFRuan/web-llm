@@ -374,8 +374,11 @@ export function postInitAndCheckFields(
 
   // 3. Last message has to be from user
   const lastId = request.messages.length - 1;
-  if (request.messages[lastId].role !== "user") {
-    throw new Error("Last message should be from `user`.");
+  if (
+    request.messages[lastId].role !== "user" ||
+    request.messages[lastId].role !== "tool"
+  ) {
+    throw new Error("Last message should be from `user` or `tool`.");
   }
 
   // 4. If streaming, n cannot be > 1, since we cannot manage multiple sequences at once
@@ -504,7 +507,7 @@ export interface ChatCompletionContentPartImage {
 export interface ChatCompletionMessageToolCall {
   /**
    * The ID of the tool call. In WebLLM, it is used as the index of the tool call among all
-   * the tools calls in this request generation.
+   * the tools called in this request generation.
    */
   id: string;
 

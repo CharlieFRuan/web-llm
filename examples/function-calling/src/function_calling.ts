@@ -1,3 +1,10 @@
+/**
+ * This example follows https://platform.openai.com/docs/guides/function-calling,
+ * where we tell the model about the `getCurrentWeather()` function, ask it to generate
+ * the function call, execute the function call, tell the model the function call's result,
+ * and let it summarize the results.
+ */
+
 import * as webllm from "@mlc-ai/web-llm";
 
 function setLabel(id: string, text: string) {
@@ -8,7 +15,35 @@ function setLabel(id: string, text: string) {
   label.innerText = text;
 }
 
+/**
+ * Dummy function that can get called with the output of the model's tool_calls output.
+ */
+function getCurrentWeather(location: string, unit: string): number {
+  if (location === "Pittsburgh") {
+    if (unit === "celsius") {
+      return 23;
+    } else if (unit === "fahrenheit") {
+      return 73.4;
+    } else {
+      throw new Error("Unexpected unit: " + unit + "please rerun example.");
+    }
+  } else if (location === "Tokyo") {
+    if (unit === "celsius") {
+      return 18;
+    } else if (unit === "fahrenheit") {
+      return 66.2;
+    } else {
+      throw new Error("Unexpected unit: " + unit + "please rerun example.");
+    }
+  } else {
+    throw new Error(
+      "Unexpected location: " + location + "please rerun example.",
+    );
+  }
+}
+
 async function main() {
+  // Step 0. Load the model
   const initProgressCallback = (report: webllm.InitProgressReport) => {
     setLabel("init-label", report.text);
   };
@@ -18,6 +53,7 @@ async function main() {
     { initProgressCallback: initProgressCallback },
   );
 
+  // Step 1: send the conversation and available functions to the model
   const tools: Array<webllm.ChatCompletionTool> = [
     {
       type: "function",
@@ -39,37 +75,52 @@ async function main() {
     },
   ];
 
+  const messages = [
+    {
+      role: "user",
+      content: "What is the current weather in celsius in Pittsburgh?",
+    },
+  ] as Array<webllm.ChatCompletionMessageParam>;
+
   const request: webllm.ChatCompletionRequest = {
-    stream: true, // works with stream as well, where the last chunk returns tool_calls
-    messages: [
-      {
-        role: "user",
-        content:
-          "What is the current weather in celsius in Pittsburgh and Tokyo?",
-      },
-    ],
+    stream: false, // works with stream as well, where the last chunk returns tool_calls
+    messages: messages,
     tool_choice: "auto",
     tools: tools,
   };
 
-  if (!request.stream) {
-    const reply0 = await engine.chat.completions.create(request);
-    console.log(reply0.choices[0]);
-  } else {
-    // If streaming, the last chunk returns tool calls
-    const asyncChunkGenerator = await engine.chat.completions.create(request);
-    let message = "";
-    let lastChunk: webllm.ChatCompletionChunk | undefined;
-    for await (const chunk of asyncChunkGenerator) {
-      console.log(chunk);
-      if (chunk.choices[0].delta.content) {
-        // Last chunk has undefined content
-        message += chunk.choices[0].delta.content;
-      }
-      setLabel("generate-label", message);
-      lastChunk = chunk;
+  const response = await engine.chat.completions.create(request);
+  const responseMessage = response.choices[0].message;
+  console.log("responseMessage: ", responseMessage);
+
+  // Step 2: check if the model wanted to call a function
+  const toolCalls = responseMessage.tool_calls;
+  if (toolCalls) {
+    // Step 3: call the function
+    // Note: the JSON response is guaranteed to be in JSON format, but not always match
+    // the function header, so be sure to catch error and retry if needed
+    const availableFunctions = {
+      get_current_weather: getCurrentWeather,
+    }; // only one function in this example, but you can have multiple
+    messages.push(responseMessage); // extend conversation with assistant's reply
+    for (const toolCall of toolCalls) {
+      const functionName = toolCall.function.name;
+      const functionToCall = availableFunctions[functionName];
+      const functionArgs = JSON.parse(toolCall.function.arguments);
+      const functionResponse = functionToCall(
+        functionArgs.location,
+        functionArgs.unit,
+      );
+      messages.push({
+        tool_call_id: toolCall.id,
+        role: "tool",
+        content: functionResponse,
+      }); // extend conversation with function response
     }
-    console.log(lastChunk!.choices[0].delta);
+    const secondResponse = await engine.chat.completions.create({
+      messages: messages,
+    }); // get a new response from the model where it can see the function response
+    return secondResponse.choices;
   }
 
   console.log(await engine.runtimeStatsText());
