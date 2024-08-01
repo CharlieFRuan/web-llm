@@ -278,7 +278,8 @@ export interface AppConfig {
  */
 export const modelVersion = "v0_2_48";
 export const modelLibURLPrefix =
-  "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/";
+  // "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/";
+  "https://raw.githubusercontent.com/CharlieFRuan/binary-mlc-llm-libs/temp-v0248/web-llm-models/";
 
 /**
  * Models that support function calling (i.e. usage of `ChatCompletionRequest.tools`). More to come.
@@ -351,6 +352,19 @@ export const prebuiltAppConfig: AppConfig = {
         context_window_size: 4096,
       },
     },
+    {
+      model: "https://huggingface.co/mlc-ai/Llama-3-8B-Instruct-q4f16_1-MLC",
+      model_id: "Llama-3-8B-Instruct-q4f16_1-MLC-asyncify",
+      model_lib:
+        modelLibURLPrefix +
+        modelVersion +
+        "/Llama-3-8B-Instruct-testasyncify-q4f16_1-ctx4k_cs1k-webgpu.wasm",
+      vram_required_MB: 5001.0,
+      low_resource_required: false,
+      overrides: {
+        context_window_size: 4096,
+      },
+    },
     // Hermes-2 Pro
     {
       model:
@@ -404,6 +418,19 @@ export const prebuiltAppConfig: AppConfig = {
         modelLibURLPrefix +
         modelVersion +
         "/Phi-3-mini-4k-instruct-q4f16_1-ctx4k_cs1k-webgpu.wasm",
+      vram_required_MB: 3672.07,
+      low_resource_required: false,
+      overrides: {
+        context_window_size: 4096,
+      },
+    },
+    {
+      model: "https://huggingface.co/mlc-ai/Phi-3-mini-4k-instruct-q4f16_1-MLC",
+      model_id: "Phi-3-mini-4k-instruct-q4f16_1-MLC-asyncify",
+      model_lib:
+        modelLibURLPrefix +
+        modelVersion +
+        "/Phi-3-mini-4k-instruct-testasyncify-q4f16_1-ctx4k_cs1k-webgpu.wasm",
       vram_required_MB: 3672.07,
       low_resource_required: false,
       overrides: {
@@ -798,6 +825,19 @@ export const prebuiltAppConfig: AppConfig = {
         modelLibURLPrefix +
         modelVersion +
         "/Qwen2-0.5B-Instruct-q4f16_1-ctx4k_cs1k-webgpu.wasm",
+      low_resource_required: true,
+      vram_required_MB: 944.62,
+      overrides: {
+        context_window_size: 4096,
+      },
+    },
+    {
+      model: "https://huggingface.co/mlc-ai/Qwen2-0.5B-Instruct-q4f16_1-MLC",
+      model_id: "Qwen2-0.5B-Instruct-q4f16_1-MLC-testasyncify",
+      model_lib:
+        modelLibURLPrefix +
+        modelVersion +
+        "/Qwen2-0.5B-Instruct-testtokenizer-q4f16_1-ctx4k_cs1k-webgpu.wasm",
       low_resource_required: true,
       vram_required_MB: 944.62,
       overrides: {

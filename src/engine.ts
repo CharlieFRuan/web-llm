@@ -194,6 +194,7 @@ export class MLCEngine implements MLCEngineInterface {
       throw new MissingModelWasmError(modelRecord.model_id);
     }
     const fetchWasmSource = async () => {
+      return (await fetch(wasmUrl)).arrayBuffer();
       if (wasmUrl.includes("localhost")) {
         // do not cache wasm on local host as we might update code frequently
         return (await fetch(wasmUrl)).arrayBuffer();
@@ -213,6 +214,24 @@ export class MLCEngine implements MLCEngineInterface {
       tvmjs.createPolyfillWASI(),
       this.logger,
     );
+
+    // To test out loading tokenizer using emcc-compiled tokenizers-cpp
+    tvm.beginScope();
+    const url = new URL("tokenizer.json", modelUrl).href;
+    const modelCache = new tvmjs.ArtifactCache("webllm/model");
+    const model = (await modelCache.fetchWithCache(
+      url,
+      "arraybuffer",
+    )) as ArrayBuffer;
+    console.log(model);
+    const getTokenizer = tvm.detachFromCurrentScope(
+      tvm.getGlobalFunc("mlc.tokenizers.Tokenizer"),
+    );
+
+    const modelAsString = new TextDecoder().decode(new Uint8Array(model));
+    console.log(modelAsString);
+    getTokenizer(modelAsString);
+    tvm.endScope();
 
     if (this.initProgressCallback !== undefined) {
       tvm.registerInitProgressCallback(this.initProgressCallback);
