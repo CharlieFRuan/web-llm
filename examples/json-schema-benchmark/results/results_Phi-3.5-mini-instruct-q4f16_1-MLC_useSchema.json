@@ -5,13 +5,13 @@
       "prompt_tokens": 245,
       "total_tokens": 289,
       "extra": {
-        "e2e_latency_s": 1.641,
-        "prefill_tokens_per_s": 370.0906344410876,
-        "decode_tokens_per_s": 45.314109165808446,
-        "time_to_first_token_s": 0.662,
-        "time_per_output_token_s": 0.022068181818181817,
-        "grammar_init_s": 0.135,
-        "grammar_per_token_s": 0.00015909090909086777
+        "e2e_latency_s": 1.632,
+        "prefill_tokens_per_s": 364.0416047548291,
+        "decode_tokens_per_s": 46.31578947368401,
+        "time_to_first_token_s": 0.673,
+        "time_per_output_token_s": 0.021590909090909185,
+        "grammar_init_s": 0.169,
+        "grammar_per_token_s": 0.00011363636363644632
       }
     },
     "generated_output": "{\n  \"ssid\": \"OfficeNetSecure\",\n  \"securityProtocol\": \"WPA2-Enterprise\",\n  \"bandwidth\": \"1300 Mbps\"\n}",
@@ -30,20 +30,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 93,
+      "completion_tokens": 66,
       "prompt_tokens": 425,
-      "total_tokens": 518,
+      "total_tokens": 491,
       "extra": {
-        "e2e_latency_s": 3.148,
-        "prefill_tokens_per_s": 394.98141263940516,
-        "decode_tokens_per_s": 45.16755706653733,
-        "time_to_first_token_s": 1.076,
-        "time_per_output_token_s": 0.022139784946236474,
-        "grammar_init_s": 0.089,
-        "grammar_per_token_s": 0.00011827956989241445
+        "e2e_latency_s": 2.532,
+        "prefill_tokens_per_s": 396.82539682539687,
+        "decode_tokens_per_s": 45.48587181254304,
+        "time_to_first_token_s": 1.071,
+        "time_per_output_token_s": 0.021984848484848503,
+        "grammar_init_s": 0.096,
+        "grammar_per_token_s": 0.00009090909090909092
       }
     },
-    "generated_output": "{\n  \"/\": {\n    \"device\": \"https://json-schema.org/draft/2020-12/schema\",\n    \"mount_point\": \"string\",\n    \"file_system_type\": \"string\",\n    \"options\": \"string\",\n    \"dump\": \"string\",\n    \"pass\": \"string\"\n  }\n}",
+    "generated_output": "{\n  \"/\": {\n    \"device\": \"string\",\n    \"mount_point\": \"string\",\n    \"file_system_type\": \"string\",\n    \"options\": \"string\",\n    \"dump\": \"string\",\n    \"pass\": \"string\"\n  }\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'$id': 'https://example.com/fstab', '$schema': 'https://json-schema.org/draft/2020-12/schema', 'type': 'object', 'required': ['/'], 'properties': {'/': {'type': 'object', 'properties': {'device': {'type': 'string'}, 'mount_point': {'type': 'string'}, 'file_system_type': {'type': 'string'}, 'options': {'type': 'string'}, 'dump': {'type': 'string', 'pattern': '^[0-1]$'}, 'pass': {'type': 'string', 'pattern': '^[0-2]$'}}, 'required': ['device', 'mount_point', 'file_system_type', 'options', 'dump', 'pass']}}, 'patternProperties': {'^(/[^/]+)+$': {'type': 'object', 'properties': {'device': {'type': 'string'}, 'mount_point': {'type': 'string'}, 'file_system_type': {'type': 'string'}, 'options': {'type': 'string'}, 'dump': {'type': 'string', 'pattern': '^[0-1]$'}, 'pass': {'type': 'string', 'pattern': '^[0-2]$'}}, 'required': ['device', 'mount_point', 'file_system_type', 'options', 'dump', 'pass']}}, 'additionalProperties': False}\n</schema>\n",
@@ -63,13 +63,13 @@
       "prompt_tokens": 307,
       "total_tokens": 397,
       "extra": {
-        "e2e_latency_s": 2.796,
-        "prefill_tokens_per_s": 400.78328981723234,
-        "decode_tokens_per_s": 44.66501240694806,
-        "time_to_first_token_s": 0.766,
-        "time_per_output_token_s": 0.022388888888888805,
-        "grammar_init_s": 0.079,
-        "grammar_per_token_s": 0.00013333333333337378
+        "e2e_latency_s": 2.776,
+        "prefill_tokens_per_s": 401.83246073298426,
+        "decode_tokens_per_s": 45.090180360721426,
+        "time_to_first_token_s": 0.764,
+        "time_per_output_token_s": 0.02217777777777779,
+        "grammar_init_s": 0.082,
+        "grammar_per_token_s": 0.00011111111111103029
       }
     },
     "generated_output": "{\n  \"campaignID\": \"CAMP123456\",\n  \"productID\": \"PROD7891011\",\n  \"startDate\": \"2023-06-01\",\n  \"endDate\": \"2023-06-30\",\n  \"discountDetails\": \"15% off on all purchases\"\n}",
@@ -88,20 +88,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 98,
+      "completion_tokens": 91,
       "prompt_tokens": 283,
-      "total_tokens": 381,
+      "total_tokens": 374,
       "extra": {
-        "e2e_latency_s": 2.926,
-        "prefill_tokens_per_s": 410.14492753623193,
-        "decode_tokens_per_s": 44.16403785488959,
-        "time_to_first_token_s": 0.69,
-        "time_per_output_token_s": 0.02264285714285714,
-        "grammar_init_s": 0.08000000000000364,
-        "grammar_per_token_s": 0.0001020408163264935
+        "e2e_latency_s": 2.696,
+        "prefill_tokens_per_s": 410.74020319303344,
+        "decode_tokens_per_s": 45.63691073219644,
+        "time_to_first_token_s": 0.689,
+        "time_per_output_token_s": 0.021912087912087985,
+        "grammar_init_s": 0.085,
+        "grammar_per_token_s": 0.0000769230769231169
       }
     },
-    "generated_output": "{\n  \"reservationID\": \"AH-158394\",\n  \"guestName\": \"Alexander Hamilton\",\n  \"reservationTime\": \"2023-04-15T19:30:00Z\",\n  \"specialRequests\": [\n    \"Table by the window\",\n    \"Note for a special occasion - Surprise dessert would be appreciated\"\n  ]\n}",
+    "generated_output": "{\n  \"reservationID\": \"AH-158394\",\n  \"guestName\": \"Alexander Hamilton\",\n  \"reservationTime\": \"2023-04-15T19:30:00\",\n  \"specialRequests\": [\n    \"Table by the window\",\n    \"Surprise dessert for special occasion\"\n  ]\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'RestaurantReservation', 'type': 'object', 'properties': {'reservationID': {'title': 'Reservation ID', 'type': 'string'}, 'guestName': {'title': 'Guest Name', 'type': 'string'}, 'reservationTime': {'title': 'Reservation Time', 'type': 'string', 'format': 'date-time'}, 'specialRequests': {'title': 'Special Requests', 'type': 'array', 'items': {'type': 'string'}}}, 'required': ['reservationID', 'guestName', 'reservationTime']}\n</schema>\n",
@@ -117,20 +117,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 139,
+      "completion_tokens": 132,
       "prompt_tokens": 272,
-      "total_tokens": 411,
+      "total_tokens": 404,
       "extra": {
-        "e2e_latency_s": 3.842,
-        "prefill_tokens_per_s": 395.3488372093044,
-        "decode_tokens_per_s": 44.40894568690068,
-        "time_to_first_token_s": 0.6879999999999964,
-        "time_per_output_token_s": 0.022517985611510933,
-        "grammar_init_s": 0.087,
-        "grammar_per_token_s": 0.00008633093525166772
+        "e2e_latency_s": 3.813,
+        "prefill_tokens_per_s": 395.34883720930236,
+        "decode_tokens_per_s": 42.58064516129015,
+        "time_to_first_token_s": 0.688,
+        "time_per_output_token_s": 0.02348484848484858,
+        "grammar_init_s": 0.098,
+        "grammar_per_token_s": 0.000060606060606088164
       }
     },
-    "generated_output": "{\n  \"HomeImprovement\": {\n    \"room_interest\": \"living room\",\n    \"budget\": 500,\n    \"preferred_style\": \"minimalist\",\n    \"project_ideas\": [\n      \"Installing floating shelves\",\n      \"Creating a gallery wall with favorite prints and photographs\",\n      \"Repainting walls with a neutral color palette\",\n      \"Upcycling old furniture with new paint or upholstery\",\n      \"Adding low-maintenance indoor plants for greenery\"\n    ]\n  }\n}",
+    "generated_output": "{\n  \"HomeImprovement\": {\n    \"room_interest\": \"living room\",\n    \"budget\": 500,\n    \"preferred_style\": \"minimalist\",\n    \"project_ideas\": [\n      \"floating shelves\",\n      \"gallery wall with favorite prints and photographs\",\n      \"repainting walls with a neutral color palette\",\n      \"upcycling old furniture with paint or new upholstery\",\n      \"low-maintenance indoor plants\"\n    ]\n  }\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'type': 'object', 'properties': {'HomeImprovement': {'type': 'object', 'properties': {'room_interest': {'type': 'string'}, 'budget': {'type': 'number'}, 'preferred_style': {'type': 'string'}, 'project_ideas': {'type': 'array', 'items': {'type': 'string'}}}, 'required': ['room_interest', 'budget', 'preferred_style', 'project_ideas']}}}\n</schema>\n",
@@ -150,13 +150,13 @@
       "prompt_tokens": 435,
       "total_tokens": 549,
       "extra": {
-        "e2e_latency_s": 3.644,
-        "prefill_tokens_per_s": 406.92235734331155,
-        "decode_tokens_per_s": 44.68835750686007,
-        "time_to_first_token_s": 1.069,
-        "time_per_output_token_s": 0.02237719298245613,
-        "grammar_init_s": 0.08800000000000364,
-        "grammar_per_token_s": 0.00013157894736832534
+        "e2e_latency_s": 4.22,
+        "prefill_tokens_per_s": 404.27509293680293,
+        "decode_tokens_per_s": 36.4333652924257,
+        "time_to_first_token_s": 1.076,
+        "time_per_output_token_s": 0.02744736842105263,
+        "grammar_init_s": 0.093,
+        "grammar_per_token_s": 0.0000789473684209888
       }
     },
     "generated_output": "{\n  \"deviceID\": \"MON123456\",\n  \"patientID\": \"PAT654321\",\n  \"metrics\": {\n    \"heartRate\": 78,\n    \"bloodPressure\": \"120/80 mmHg\",\n    \"oxygenSaturation\": 98\n  },\n  \"timestamp\": \"2023-04-05T14:30:00Z\"\n}",
@@ -175,20 +175,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 193,
+      "completion_tokens": 188,
       "prompt_tokens": 404,
-      "total_tokens": 597,
+      "total_tokens": 592,
       "extra": {
-        "e2e_latency_s": 5.354,
-        "prefill_tokens_per_s": 404,
-        "decode_tokens_per_s": 44.67592592592611,
-        "time_to_first_token_s": 1,
-        "time_per_output_token_s": 0.02238341968911908,
-        "grammar_init_s": 0.10700000000000363,
-        "grammar_per_token_s": 0.00007253886010366467
+        "e2e_latency_s": 5.425,
+        "prefill_tokens_per_s": 403.5964035964051,
+        "decode_tokens_per_s": 42.89299566506984,
+        "time_to_first_token_s": 1.0009999999999963,
+        "time_per_output_token_s": 0.023313829787233904,
+        "grammar_init_s": 0.122,
+        "grammar_per_token_s": 0.00009574468085110252
       }
     },
-    "generated_output": "{\n  \"FitnessTracking\": {\n    \"current_health_status\": {\n      \"weight\": 70,\n      \"height\": 175,\n      \"heart_rate\": 62\n    },\n    \"health_goals\": [\n      \"increase muscle mass\",\n      \"improve cardiovascular endurance\",\n      \"enhance flexibility\"\n    ],\n    \"recommended_routines\": [\n      \"Strength training sessions three times a week focusing on major muscle groups\",\n      \"Cardiovascular exercises such as running or cycling for at least 30 minutes, five days a week\",\n      \"Daily stretching exerderies to improve flexibility, including yoga or pilates\"\n    ]\n  }\n}",
+    "generated_output": "{\n  \"FitnessTracking\": {\n    \"current_health_status\": {\n      \"weight\": 70,\n      \"height\": 175,\n      \"heart_rate\": 62\n    },\n    \"health_goals\": [\n      \"increase muscle mass\",\n      \"improve cardiovascular endurance\",\n      \"enhance flexibility\"\n    ],\n    \"recommended_routines\": [\n      \"Strength training sessions three times a week focusing on major muscle groups\",\n      \"Cardiovascular exercises such as running or cycling for at least 30 minutes, five days a week\",\n      \"Daily stretching exermes\",\n      \"including yoga or pilates\"\n    ]\n  }\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'type': 'object', 'properties': {'FitnessTracking': {'type': 'object', 'properties': {'current_health_status': {'type': 'object', 'properties': {'weight': {'type': 'number'}, 'height': {'type': 'number'}, 'heart_rate': {'type': 'number'}}, 'required': ['weight', 'height', 'heart_rate']}, 'health_goals': {'type': 'array', 'items': {'type': 'string'}}, 'recommended_routines': {'type': 'array', 'items': {'type': 'string'}}}, 'required': ['current_health_status', 'health_goals', 'recommended_routines']}}}\n</schema>\n",
@@ -204,20 +204,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 57,
+      "completion_tokens": 64,
       "prompt_tokens": 156,
-      "total_tokens": 213,
+      "total_tokens": 220,
       "extra": {
-        "e2e_latency_s": 1.67,
-        "prefill_tokens_per_s": 400,
-        "decode_tokens_per_s": 44.74097331240189,
-        "time_to_first_token_s": 0.39,
-        "time_per_output_token_s": 0.02235087719298245,
-        "grammar_init_s": 0.07,
-        "grammar_per_token_s": 0.00003508771929824561
+        "e2e_latency_s": 1.937,
+        "prefill_tokens_per_s": 398.9769820971867,
+        "decode_tokens_per_s": 41.8027433050298,
+        "time_to_first_token_s": 0.391,
+        "time_per_output_token_s": 0.023921874999999766,
+        "grammar_init_s": 0.072,
+        "grammar_per_token_s": 0.00010937499999988631
       }
     },
-    "generated_output": "{\n  \"seatNumber\": \"12A\",\n  \"serviceType\": \"vegetarian meal, gluten-free\",\n  \"specialInstructions\": \"Request a vegetarian, gluten-free meal during this flight.\"\n}",
+    "generated_output": "{\n  \"seatNumber\": \"12A\",\n  \"serviceType\": \"vegetarian meal, gluten-free\",\n  \"specialInstructions\": \"Ensure that the in-flight meal provided is both vegetarian and gluten-free.\"\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'properties': {'seatNumber': {'type': 'string'}, 'serviceType': {'type': 'string'}, 'specialInstructions': {'type': 'string'}}, 'required': ['seatNumber', 'serviceType'], 'type': 'object'}\n</schema>\n",
@@ -237,13 +237,13 @@
       "prompt_tokens": 271,
       "total_tokens": 330,
       "extra": {
-        "e2e_latency_s": 2.014,
-        "prefill_tokens_per_s": 397.36070381232093,
-        "decode_tokens_per_s": 44.46119065561418,
-        "time_to_first_token_s": 0.6819999999999927,
-        "time_per_output_token_s": 0.022491525423728804,
-        "grammar_init_s": 0.067,
-        "grammar_per_token_s": 0.00006779661016973817
+        "e2e_latency_s": 2.127,
+        "prefill_tokens_per_s": 394.46870451236845,
+        "decode_tokens_per_s": 41.287613715885016,
+        "time_to_first_token_s": 0.6870000000000073,
+        "time_per_output_token_s": 0.024220338983050975,
+        "grammar_init_s": 0.072,
+        "grammar_per_token_s": 0.00015254237288147925
       }
     },
     "generated_output": "{\n  \"SKU\": \"TOB-1928\",\n  \"quantity\": 150,\n  \"restockDate\": \"2023-04-15\",\n  \"supplier\": \"Global Tobacco Ltd.\"\n}",
@@ -266,13 +266,13 @@
       "prompt_tokens": 299,
       "total_tokens": 380,
       "extra": {
-        "e2e_latency_s": 2.56,
-        "prefill_tokens_per_s": 392.904073587385,
-        "decode_tokens_per_s": 45.27669088876453,
-        "time_to_first_token_s": 0.761,
-        "time_per_output_token_s": 0.02208641975308649,
-        "grammar_init_s": 0.078,
-        "grammar_per_token_s": 0.000037037037037037037
+        "e2e_latency_s": 2.527,
+        "prefill_tokens_per_s": 391.3612565445064,
+        "decode_tokens_per_s": 46.2592804111936,
+        "time_to_first_token_s": 0.7639999999999927,
+        "time_per_output_token_s": 0.021617283950617284,
+        "grammar_init_s": 0.08699999999999272,
+        "grammar_per_token_s": 0.00009876543209867559
       }
     },
     "generated_output": "{\n  \"patentId\": \"US98765432A\",\n  \"applicationDate\": \"2021-07-15\",\n  \"inventorNames\": [\n    \"Dr. Alice Smith\",\n    \"Dr. Bob Jones\"\n  ],\n  \"currentStatus\": \"Pending Examination\"\n}",
@@ -295,13 +295,13 @@
       "prompt_tokens": 297,
       "total_tokens": 349,
       "extra": {
-        "e2e_latency_s": 1.895,
-        "prefill_tokens_per_s": 390.2759526938239,
-        "decode_tokens_per_s": 46.058458813108935,
-        "time_to_first_token_s": 0.761,
-        "time_per_output_token_s": 0.021711538461538466,
-        "grammar_init_s": 0.099,
-        "grammar_per_token_s": 0.000057692307692447614
+        "e2e_latency_s": 1.896,
+        "prefill_tokens_per_s": 389.2529488859764,
+        "decode_tokens_per_s": 46.14019520851787,
+        "time_to_first_token_s": 0.763,
+        "time_per_output_token_s": 0.021673076923077073,
+        "grammar_init_s": 0.10100000000000728,
+        "grammar_per_token_s": 0.000076923076922937
       }
     },
     "generated_output": "{\n  \"capitalGains\": 1250000.00,\n  \"interestIncome\": 375000.00,\n  \"totalReturn\": 8.5\n}",
@@ -324,13 +324,13 @@
       "prompt_tokens": 351,
       "total_tokens": 456,
       "extra": {
-        "e2e_latency_s": 3.228,
-        "prefill_tokens_per_s": 399.77220956719816,
-        "decode_tokens_per_s": 44.94863013698603,
-        "time_to_first_token_s": 0.878,
-        "time_per_output_token_s": 0.022247619047619183,
-        "grammar_init_s": 0.084,
-        "grammar_per_token_s": 0.0001428571428570736
+        "e2e_latency_s": 3.687,
+        "prefill_tokens_per_s": 404.37788018433514,
+        "decode_tokens_per_s": 37.44650499286707,
+        "time_to_first_token_s": 0.8679999999999928,
+        "time_per_output_token_s": 0.026704761904762092,
+        "grammar_init_s": 0.09199999999999273,
+        "grammar_per_token_s": 0.00010476190476190478
       }
     },
     "generated_output": "{\n  \"modelName\": \"EcoNest\",\n  \"dimensions\": {\n    \"length\": 12,\n    \"width\": 7,\n    \"height\": 3.5\n  },\n  \"price\": 75000,\n  \"features\": [\n    \"solar panels\",\n    \"rainwater harvesting system\",\n    \"energy-efficient windows\",\n    \"modern kitchen\"\n  ]\n}",
@@ -349,20 +349,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 154,
+      "completion_tokens": 152,
       "prompt_tokens": 355,
-      "total_tokens": 509,
+      "total_tokens": 507,
       "extra": {
-        "e2e_latency_s": 4.452,
-        "prefill_tokens_per_s": 384.19913419913416,
-        "decode_tokens_per_s": 43.92470051340541,
-        "time_to_first_token_s": 0.924,
-        "time_per_output_token_s": 0.022766233766233858,
-        "grammar_init_s": 0.08499999999999272,
-        "grammar_per_token_s": 0.00006493506493506495
+        "e2e_latency_s": 4.351,
+        "prefill_tokens_per_s": 384.19913419913723,
+        "decode_tokens_per_s": 44.78491455509734,
+        "time_to_first_token_s": 0.9239999999999927,
+        "time_per_output_token_s": 0.022328947368420997,
+        "grammar_init_s": 0.08599999999999272,
+        "grammar_per_token_s": 0.00009210526315794262
       }
     },
-    "generated_output": "{\n  \"treatyId\": \"RT-2023-05-001\",\n  \"type\": \"Non-proportional Excess of Loss Reinsurance\",\n  \"partiesInvolved\": [\n    \"Atlas Insurance PCC Limited\",\n    \"Global Reinsurance Ltd\"\n  ],\n  \"treatyTerms\": \"Reinsurer will cover losses over $10 million up to a maximum of $50 million, with a reinstatement provision that allows for the coverage to be reset once exhausted, subject to a premium adjustment.\",\n  \"signatureDate\": \"2023-05-15\"\n}",
+    "generated_output": "{\n  \"treatyId\": \"RT-2023-05-001\",\n  \"type\": \"Non-proportional excess of loss reinsurance\",\n  \"partiesInvolved\": [\n    \"Atlas Insurance PCC Limited\",\n    \"Global Reinsurance Ltd\"\n  ],\n  \"treatyTerms\": \"Reinsurer will cover losses over $10 million up to a maximum of $50 million with a reinstatement provision allowing for the coverage to be reset once exhausted, subject to a premium adjustment.\",\n  \"signatureDate\": \"2feriem 15, 2023\"\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'ReinsuranceTreaty', 'type': 'object', 'properties': {'treatyId': {'title': 'Treaty ID', 'type': 'string'}, 'type': {'title': 'Type', 'type': 'string'}, 'partiesInvolved': {'title': 'Parties Involved', 'type': 'array', 'items': {'type': 'string'}}, 'treatyTerms': {'title': 'Treaty Terms', 'type': 'string'}, 'signatureDate': {'format': 'date', 'title': 'Signature Date', 'type': 'string'}}, 'required': ['treatyId', 'type', 'partiesInvolved', 'treatyTerms', 'signatureDate']}\n</schema>\n",
@@ -378,20 +378,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 124,
+      "completion_tokens": 127,
       "prompt_tokens": 302,
-      "total_tokens": 426,
+      "total_tokens": 429,
       "extra": {
-        "e2e_latency_s": 3.625,
-        "prefill_tokens_per_s": 395.80602883355175,
-        "decode_tokens_per_s": 43.661971830986154,
-        "time_to_first_token_s": 0.763,
-        "time_per_output_token_s": 0.022903225806451485,
-        "grammar_init_s": 0.071,
-        "grammar_per_token_s": 0.0000806451612903226
+        "e2e_latency_s": 4.314,
+        "prefill_tokens_per_s": 395.28795811518324,
+        "decode_tokens_per_s": 36.00793875815135,
+        "time_to_first_token_s": 0.764,
+        "time_per_output_token_s": 0.02777165354330713,
+        "grammar_init_s": 0.075,
+        "grammar_per_token_s": 0.00010236220472458134
       }
     },
-    "generated_output": "{\n  \"courseId\": \"CS101\",\n  \"courseName\": \"Introduction to Consumer Services\",\n  \"description\": \"This course introduces the fundamentals of consumer services across various industries such as retail, hospitality, and personal services. It covers essential aspects of customer service, explores the role consumer behavior plays in service design, and examines how technology influences consumer interactions. Students will gain insights into effective service strategies and tools for enhancing customer experiences in different service settings.\",\n  \"creditHours\": 3\n}",
+    "generated_output": "{\n  \"courseId\": \"CS101\",\n  \"courseName\": \"Introduction to Consumer Services\",\n  \"description\": \"This course provides a comprehensive overview of consumer services in various sectors such as retail, hospitality, and personal services. Emphasizing the significance of customer service, the course explores how consumer behavior influences service design and strategizes on adapting to the digital transformation in consumer interactions. Students will gain insights into the essential skills for delivering high-quality service across different industries.\",\n  \"creditHours\": 3\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'properties': {'courseId': {'title': 'Course ID', 'type': 'string'}, 'courseName': {'title': 'Course Name', 'type': 'string'}, 'description': {'title': 'Description', 'type': 'string'}, 'creditHours': {'title': 'Credit Hours', 'type': 'integer'}}, 'required': ['courseId', 'courseName', 'description', 'creditHours'], 'title': 'CourseCatalogEntry', 'type': 'object'}\n</schema>\n",
@@ -411,13 +411,13 @@
       "prompt_tokens": 304,
       "total_tokens": 414,
       "extra": {
-        "e2e_latency_s": 3.288,
+        "e2e_latency_s": 3.279,
         "prefill_tokens_per_s": 397.90575916230364,
-        "decode_tokens_per_s": 43.84216819449996,
+        "decode_tokens_per_s": 44.05286343612308,
         "time_to_first_token_s": 0.764,
-        "time_per_output_token_s": 0.022809090909090824,
-        "grammar_init_s": 0.076,
-        "grammar_per_token_s": 0.00008181818181811567
+        "time_per_output_token_s": 0.022700000000000137,
+        "grammar_init_s": 0.081,
+        "grammar_per_token_s": 0.00012727272727272734
       }
     },
     "generated_output": "{\n  \"branchID\": \"BR00123\",\n  \"address\": \"1234 Finance Avenue, Capital City, 12345\",\n  \"servicesOffered\": [\n    \"Personal Banking\",\n    \"Business Accounts\",\n    \"Loan Services\",\n    \"Safe Deposit Boxes\"\n  ],\n  \"openingHours\": \"Monday to Friday, 9 am to 5 pm\"\n}",
@@ -436,17 +436,17 @@
   },
   {
     "usage": {
-      "completion_tokens": 15,
+      "completion_tokens": 13,
       "prompt_tokens": 285,
-      "total_tokens": 300,
+      "total_tokens": 298,
       "extra": {
-        "e2e_latency_s": 1.007,
-        "prefill_tokens_per_s": 411.84971098265896,
-        "decode_tokens_per_s": 47.770700636942664,
-        "time_to_first_token_s": 0.692,
-        "time_per_output_token_s": 0.02093333333333334,
-        "grammar_init_s": 0.058,
-        "grammar_per_token_s": 0.0003333333333333333
+        "e2e_latency_s": 0.993,
+        "prefill_tokens_per_s": 412.4457308248958,
+        "decode_tokens_per_s": 43.189368770765164,
+        "time_to_first_token_s": 0.6909999999999927,
+        "time_per_output_token_s": 0.023153846153845595,
+        "grammar_init_s": 0.059999999999992726,
+        "grammar_per_token_s": 0.00007692307692251722
       }
     },
     "generated_output": "{\n  \"deviceType\": \"laptop\"\n}",
@@ -465,20 +465,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 158,
+      "completion_tokens": 160,
       "prompt_tokens": 394,
-      "total_tokens": 552,
+      "total_tokens": 554,
       "extra": {
-        "e2e_latency_s": 4.628,
-        "prefill_tokens_per_s": 397.1774193548416,
-        "decode_tokens_per_s": 43.69469026548667,
-        "time_to_first_token_s": 0.9919999999999928,
-        "time_per_output_token_s": 0.02288607594936712,
-        "grammar_init_s": 0.08099999999999273,
-        "grammar_per_token_s": 0.00007594936708860761
+        "e2e_latency_s": 5.374,
+        "prefill_tokens_per_s": 396.77744209466266,
+        "decode_tokens_per_s": 36.756260050540156,
+        "time_to_first_token_s": 0.993,
+        "time_per_output_token_s": 0.027206249999999776,
+        "grammar_init_s": 0.085,
+        "grammar_per_token_s": 0.00004374999999990905
       }
     },
-    "generated_output": "{\n  \"feedbackID\": \"QC-FB-20230330-39217\",\n  \"customerID\": \"QC-39217\",\n  \"serviceRating\": 4,\n  \"comments\": \"Mobile service has been reliable with excellent coverage and I would rate it a 5 out of 5. However, the internet service has had intermittent connectivity issues, especially during peak hours, which has been quite frustrating. The customer support team was helpful and responsive when I reached out about the internet issues.\",\n  \"submissionDate\": \"2023-03-30T00:00:00Z\"\n}",
+    "generated_output": "{\n  \"feedbackID\": \"QC-FB-20230330-39217\",\n  \"customerID\": \"QC-39217\",\n  \"serviceRating\": 4,\n  \"comments\": \"The mobile service has been reliable with excellent coverage, and I would rate it a 5 out of 5. However, the internet service has had intermittent connectivity issues, especially during peak hours, which has been quite frustrating. The customer support team was helpful and responsive when I reached out about the internet issues.\",\n  \"submissionDate\": \"2023-03-30T00:00:00Z\"\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'CustomerFeedbackForm', 'type': 'object', 'properties': {'feedbackID': {'title': 'Feedback ID', 'type': 'string'}, 'customerID': {'title': 'Customer ID', 'type': 'string'}, 'serviceRating': {'title': 'Service Rating', 'type': 'integer', 'minimum': 1, 'maximum': 5}, 'comments': {'title': 'Comments', 'type': 'string'}, 'submissionDate': {'title': 'Submission Date', 'type': 'string', 'format': 'date-time'}}, 'required': ['feedbackID', 'customerID', 'serviceRating', 'comments', 'submissionDate']}\n</schema>\n",
@@ -494,20 +494,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 40,
+      "completion_tokens": 39,
       "prompt_tokens": 192,
-      "total_tokens": 232,
+      "total_tokens": 231,
       "extra": {
-        "e2e_latency_s": 1.423,
+        "e2e_latency_s": 1.345,
         "prefill_tokens_per_s": 354.89833641405284,
-        "decode_tokens_per_s": 45.454545454545446,
+        "decode_tokens_per_s": 48.81101376720812,
         "time_to_first_token_s": 0.5409999999999927,
-        "time_per_output_token_s": 0.022000000000000002,
-        "grammar_init_s": 0.058000000000007275,
-        "grammar_per_token_s": 0.000025000000000181896
+        "time_per_output_token_s": 0.02048717948717986,
+        "grammar_init_s": 0.058999999999992725,
+        "grammar_per_token_s": 0.00012820512820531477
       }
     },
-    "generated_output": "{\n  \"data\": {\",\": \"integer\",\",\": \"string\",\",\": \"null\",\",\": [\"integer\"],\"$ref\": \"#/properties/data\"}\n}",
+    "generated_output": "{\n  \"data\": {\"type\": \"array\",\"items\": {\"type\": \"integer\"},\"example\": [1,2,3,4,5]}\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'Enumerated Values', 'type': 'object', 'properties': {'data': {'oneOf': [{'type': 'integer'}, {'type': 'string'}, {'type': 'null'}, {'type': 'array', 'items': {'type': 'integer'}}]}}}\n</schema>\n",
@@ -527,13 +527,13 @@
       "prompt_tokens": 349,
       "total_tokens": 446,
       "extra": {
-        "e2e_latency_s": 3.013,
-        "prefill_tokens_per_s": 401.6110471806674,
-        "decode_tokens_per_s": 45.4758556024376,
-        "time_to_first_token_s": 0.869,
-        "time_per_output_token_s": 0.02198969072164962,
-        "grammar_init_s": 0.096,
-        "grammar_per_token_s": 0.00006185567010294276
+        "e2e_latency_s": 3.02,
+        "prefill_tokens_per_s": 403.93518518518516,
+        "decode_tokens_per_s": 45.36950420954227,
+        "time_to_first_token_s": 0.864,
+        "time_per_output_token_s": 0.022041237113401748,
+        "grammar_init_s": 0.10000000000000728,
+        "grammar_per_token_s": 0.00009278350515448914
       }
     },
     "generated_output": "{\n  \"storeID\": \"CS-1123\",\n  \"openingTime\": \"08:00\",\n  \"closingTime\": \"20:00\",\n  \"daysOpen\": [\n    \"Monday\",\n    \"Tuesday\",\n    \"Wednesday\",\n    \"Thursday\",\n    \"Friday\",\n    \"Saturday\"\n  ]\n}",
@@ -556,16 +556,16 @@
       "prompt_tokens": 325,
       "total_tokens": 381,
       "extra": {
-        "e2e_latency_s": 2.171,
-        "prefill_tokens_per_s": 377.90697674418607,
-        "decode_tokens_per_s": 42.84621270084162,
-        "time_to_first_token_s": 0.86,
-        "time_per_output_token_s": 0.02333928571428572,
-        "grammar_init_s": 0.051000000000014555,
-        "grammar_per_token_s": 0.000107142857143117
+        "e2e_latency_s": 2.187,
+        "prefill_tokens_per_s": 378.3469150174686,
+        "decode_tokens_per_s": 42.392127176382,
+        "time_to_first_token_s": 0.8589999999999854,
+        "time_per_output_token_s": 0.023589285714285455,
+        "grammar_init_s": 0.05299999999998545,
+        "grammar_per_token_s": 0.000053571428571428575
       }
     },
-    "generated_output": "{\".LogisticsDashboard\": {\"totalShipments\": 523,\"onTimeDeliveryRate\": 96.5,\".AverageDeliveryTime\": 18.2,\".PendingShipments\": 14}}",
+    "generated_output": "{\".LogisticsDashboard\": {\"totalShipments\": 523,\".onTimeDeliveryRate\": 96.5,\".averageDeliveryTime\": 18.2,\".pendingShipments\": 14}}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'LogisticsDashboard': {'type': 'object', 'properties': {'totalShipments': {'title': 'Total Shipments', 'type': 'integer'}, 'onTimeDeliveryRate': {'title': 'On Time Delivery Rate', 'type': 'number', 'minimum': 0, 'maximum': 100}, 'averageDeliveryTime': {'title': 'Average Delivery Time', 'type': 'number'}, 'pendingShipments': {'title': 'Pending Shipments', 'type': 'integer'}}, 'required': ['totalShipments', 'onTimeDeliveryRate', 'averageDeliveryTime', 'pendingShipments']}}\n</schema>\n",
@@ -585,13 +585,13 @@
       "prompt_tokens": 295,
       "total_tokens": 362,
       "extra": {
-        "e2e_latency_s": 2.277,
+        "e2e_latency_s": 2.234,
         "prefill_tokens_per_s": 388.1578947368421,
-        "decode_tokens_per_s": 44.40026507620856,
+        "decode_tokens_per_s": 45.733788395904455,
         "time_to_first_token_s": 0.76,
-        "time_per_output_token_s": 0.02252238805970192,
-        "grammar_init_s": 0.083,
-        "grammar_per_token_s": 0
+        "time_per_output_token_s": 0.021865671641791037,
+        "grammar_init_s": 0.085,
+        "grammar_per_token_s": 0.00011940298507484405
       }
     },
     "generated_output": "{\n  \"gameId\": \"VG12345\",\n  \"title\": \"Space Quest\",\n  \"platform\": [\n    \"PC\",\n    \"Console\"\n  ],\n  \"availability\": true,\n  \"price\": 29.99\n}",
@@ -614,13 +614,13 @@
       "prompt_tokens": 214,
       "total_tokens": 268,
       "extra": {
-        "e2e_latency_s": 1.729,
+        "e2e_latency_s": 1.686,
         "prefill_tokens_per_s": 390.51094890510944,
-        "decode_tokens_per_s": 46.11443210930885,
+        "decode_tokens_per_s": 47.61904761904701,
         "time_to_first_token_s": 0.548,
-        "time_per_output_token_s": 0.02168518518518492,
-        "grammar_init_s": 0.07100000000001455,
-        "grammar_per_token_s": 0.00007407407407407407
+        "time_per_output_token_s": 0.02100000000000027,
+        "grammar_init_s": 0.077,
+        "grammar_per_token_s": 0.00011111111111111112
       }
     },
     "generated_output": "{\n  \"customerID\": \"CUST29382\",\n  \"feedbackScore\": 4,\n  \"comments\": \"The service was very prompt and professional, but I wish there was more variety in the product options.\"\n}",
@@ -643,16 +643,16 @@
       "prompt_tokens": 305,
       "total_tokens": 416,
       "extra": {
-        "e2e_latency_s": 3.178,
+        "e2e_latency_s": 3.273,
         "prefill_tokens_per_s": 398.6928104575163,
-        "decode_tokens_per_s": 46.36591478696693,
+        "decode_tokens_per_s": 44.382247101159315,
         "time_to_first_token_s": 0.765,
-        "time_per_output_token_s": 0.021567567567567794,
-        "grammar_init_s": 0.092,
-        "grammar_per_token_s": 0.00013513513513500408
+        "time_per_output_token_s": 0.022531531531531642,
+        "grammar_init_s": 0.085,
+        "grammar_per_token_s": 0.00007207207207220316
       }
     },
-    "generated_output": "{\n  \"startDate\": \"2023-04-15\",\n  \"endDate\": \"2023-04-17\",\n  \"summary\": \"Tech Innovators Conference 2023\",\n  \"location\": \"Grand Tech Arena, 123 Innovation Drive, Techville\",\n  \"recurrenceDate\": \"2024-04-15\",\n  \"category\": \"Technology\"\n}",
+    "generated_output": "{\n  \"startDate\": \"2023-04-15\",\n  \"endDate\": \"2023-04-17\",\n  \"summary\": \"Tech Innovators Conference 2023\",\n  \"location\": \"Grand Tech Arena, 123 Innovation Drive, Techville\",\n  \"recurrenceDate\": \"2023-04-15\",\n  \"category\": \"Technology\"\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'description': 'A representation of an event', 'type': 'object', 'required': ['startDate', 'summary'], 'properties': {'startDate': {'type': 'string', 'description': 'Event starting time'}, 'endDate': {'type': 'string', 'description': 'Event ending time'}, 'summary': {'type': 'string'}, 'location': {'type': 'string'}, 'recurrenceDate': {'type': 'string', 'description': 'Recurrence date'}, 'category': {'type': 'string'}}}\n</schema>\n",
@@ -668,20 +668,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 95,
+      "completion_tokens": 93,
       "prompt_tokens": 271,
-      "total_tokens": 366,
+      "total_tokens": 364,
       "extra": {
-        "e2e_latency_s": 2.866,
-        "prefill_tokens_per_s": 395.62043795619593,
-        "decode_tokens_per_s": 43.738489871086855,
-        "time_to_first_token_s": 0.6850000000000146,
-        "time_per_output_token_s": 0.022863157894736686,
-        "grammar_init_s": 0.1,
-        "grammar_per_token_s": 0.00009473684210541633
+        "e2e_latency_s": 3.283,
+        "prefill_tokens_per_s": 395.04373177843405,
+        "decode_tokens_per_s": 36.03254552499011,
+        "time_to_first_token_s": 0.6859999999999854,
+        "time_per_output_token_s": 0.027752688172043162,
+        "grammar_init_s": 0.10299999999998545,
+        "grammar_per_token_s": 0.00011827956989278608
       }
     },
-    "generated_output": "{\n  \"applicantDetails\": {\n    \"firstName\": \"Sarah\",\n    \"lastName\": \"Connor\",\n    \"dateOfBirth\": \"1985-07-12\",\n    \"employmentStatus\": \"full-time software developer\"\n  },\n  \"loanAmount\": 15000,\n  \"creditScore\": 750\n}",
+    "generated_output": "{\n  \"applicantDetails\": {\n    \"firstName\": \"Sarah\",\n    \"lastName\": \"Connor\",\n    \"dateOfBirth\": \"1985-07-12\",\n    \"employmentStatus\": \"employed\"\n  },\n  \"loanAmount\": 15000,\n  \"creditScore\": 750\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'LoanApplication', 'type': 'object', 'properties': {'applicantDetails': {'type': 'object', 'properties': {'firstName': {'type': 'string'}, 'lastName': {'type': 'string'}, 'dateOfBirth': {'type': 'string', 'format': 'date'}, 'employmentStatus': {'type': 'string'}}, 'required': ['firstName', 'lastName', 'dateOfBirth', 'employmentStatus']}, 'loanAmount': {'type': 'number'}, 'creditScore': {'type': 'integer'}}, 'required': ['applicantDetails', 'loanAmount', 'creditScore']}\n</schema>\n",
@@ -701,13 +701,13 @@
       "prompt_tokens": 365,
       "total_tokens": 410,
       "extra": {
-        "e2e_latency_s": 1.901,
-        "prefill_tokens_per_s": 393.31896551724134,
-        "decode_tokens_per_s": 46.58385093167629,
-        "time_to_first_token_s": 0.928,
-        "time_per_output_token_s": 0.021466666666667005,
-        "grammar_init_s": 0.087,
-        "grammar_per_token_s": 0.000044444444444444447
+        "e2e_latency_s": 1.924,
+        "prefill_tokens_per_s": 394.5945945945946,
+        "decode_tokens_per_s": 45.22613065326631,
+        "time_to_first_token_s": 0.925,
+        "time_per_output_token_s": 0.022111111111111123,
+        "grammar_init_s": 0.082,
+        "grammar_per_token_s": 0.00006666666666666667
       }
     },
     "generated_output": "{\n  \"storage\": \"/dev/sda1\",\n  \"fstype\": \"ext4\",\n  \"options\": \"rw,noatime\",\n  \"readonly\": false\n}",
@@ -730,13 +730,13 @@
       "prompt_tokens": 280,
       "total_tokens": 339,
       "extra": {
-        "e2e_latency_s": 1.988,
+        "e2e_latency_s": 1.985,
         "prefill_tokens_per_s": 407.5691411935953,
-        "decode_tokens_per_s": 45.771916214120004,
+        "decode_tokens_per_s": 45.701006971339524,
         "time_to_first_token_s": 0.687,
-        "time_per_output_token_s": 0.02184745762711839,
-        "grammar_init_s": 0.081,
-        "grammar_per_token_s": 0.00008474576271186441
+        "time_per_output_token_s": 0.021881355932203642,
+        "grammar_init_s": 0.079,
+        "grammar_per_token_s": 0.00006779661016949152
       }
     },
     "generated_output": "{\n  \"itemID\": \"SH123\",\n  \"itemName\": \"Summer Breeze T-Shirt\",\n  \"size\": \"M\",\n  \"color\": \"Blue\",\n  \"price\": 19.99\n}",
@@ -759,13 +759,13 @@
       "prompt_tokens": 333,
       "total_tokens": 439,
       "extra": {
-        "e2e_latency_s": 3.218,
-        "prefill_tokens_per_s": 387.2093023255814,
-        "decode_tokens_per_s": 45.164039198977456,
-        "time_to_first_token_s": 0.86,
-        "time_per_output_token_s": 0.02214150943396225,
-        "grammar_init_s": 0.113,
-        "grammar_per_token_s": 0.0000849056603773585
+        "e2e_latency_s": 3.231,
+        "prefill_tokens_per_s": 386.7595818815331,
+        "decode_tokens_per_s": 45.06802721088381,
+        "time_to_first_token_s": 0.861,
+        "time_per_output_token_s": 0.022188679245283286,
+        "grammar_init_s": 0.106,
+        "grammar_per_token_s": 0.00006603773584933117
       }
     },
     "generated_output": "{\n  \"name\": \"Alice Johnson\",\n  \"age\": 35,\n  \"address\": {\n    \"street\": \"742 Evergreen Terrace\",\n    \"city\": \"Springfield\",\n    \"state\": \"Illinois\",\n    \"postalCode\": \"62704\"\n  },\n  \"hobbies\": [\n    \"reading\",\n    \"gardening\",\n    \"cycling\"\n  ]\n}",
@@ -784,20 +784,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 262,
+      "completion_tokens": 327,
       "prompt_tokens": 522,
-      "total_tokens": 784,
+      "total_tokens": 849,
       "extra": {
-        "e2e_latency_s": 7.314,
-        "prefill_tokens_per_s": 400.9216589861751,
-        "decode_tokens_per_s": 43.90080428954397,
-        "time_to_first_token_s": 1.302,
-        "time_per_output_token_s": 0.022778625954198613,
-        "grammar_init_s": 0.055,
-        "grammar_per_token_s": 0.000099236641221263
+        "e2e_latency_s": 8.948,
+        "prefill_tokens_per_s": 400.30674846625766,
+        "decode_tokens_per_s": 43.25396825396811,
+        "time_to_first_token_s": 1.304,
+        "time_per_output_token_s": 0.023119266055045946,
+        "grammar_init_s": 0.05300000000001455,
+        "grammar_per_token_s": 0.000048929663608562705
       }
     },
-    "generated_output": "{\"CustomerVehicleServiceHistory\": {\"customerID\": \"CU789456\",\"vehicleID\": \"4T1BF1FK5FU033209\",\"serviceRecords\": [{\"serviceDate\": \"2016-05-10\",\"description\": \"Oil Change\",\"cost\": 75.00},{\"serviceDate\": \"2fertizado em 2017-04-22\",\": \": \"Brake Pad Replacement\",\"cost\": 150.00},{\"serviceDate\": \"2018-03-15\",\": \": \"Battery Replacement\",\"cost\": 100.00},{\"serviceDate\": \"2019-06-30\",\": \": \"Tire Rotation\",\"cost\": 50.00},{\"serviceDate\": \"2020-07-18\",\": \": \"Air Filter Replacement\",\"cost\": 45.00},{\"totalSpent\": 420.00}],\"totalSpent\": 420.00}}",
+    "generated_output": "{\".@include 'CustomerVehicleServiceHistory.json_schema'  ## JSON schema for Customer Vehicle Service History as described: 'CustomerVehicleServiceHistory': {'type': 'object', 'properties': {'customerID': {'title': 'Customer ID', 'type': 'string'}, 'vehicleID': {'title': 'Vehicle ID', 'type': 'string'}, 'serviceRecords': {'type': 'array', 'items': {'type': 'object', 'properties': {'serviceDate': {'title': 'Service Date', 'type': 'string', 'format': 'date'}, 'description': {'title': 'Description', 'type': 'string'}, 'cost': {'title': 'Cost', 'type': 'number'}}, 'required': ['customerID', 'vehicleID', 'serviceRecords', 'totalSpent']}}.  Here is the properly formatted JSON object based on the information you provided:```json{  \": \"customerID\",\": \": \"CU789456\",\", \": \"vehicleID\",\" : \": \"4T1BF1FK5FU033209\",\", \": \"serviceRecords\",\" : [{\": \"serviceDate\",\" : \": \"\\\"2016-05-10\\\"\",\", \": \"description\",\" : \": \"\\\"Oil Change\\\"\",\", \": \"cost\",\" : \": \"75\",\", \": \"\"}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'CustomerVehicleServiceHistory': {'type': 'object', 'properties': {'customerID': {'title': 'Customer ID', 'type': 'string'}, 'vehicleID': {'title': 'Vehicle ID', 'type': 'string'}, 'serviceRecords': {'title': 'Service Records', 'type': 'array', 'items': {'type': 'object', 'properties': {'serviceDate': {'title': 'Service Date', 'type': 'string', 'format': 'date'}, 'description': {'title': 'Description', 'type': 'string'}, 'cost': {'title': 'Cost', 'type': 'number'}}, 'required': ['serviceDate', 'description', 'cost']}}, 'totalSpent': {'title': 'Total Spent', 'type': 'number'}}, 'required': ['customerID', 'vehicleID', 'serviceRecords', 'totalSpent']}}\n</schema>\n",
@@ -817,13 +817,13 @@
       "prompt_tokens": 398,
       "total_tokens": 608,
       "extra": {
-        "e2e_latency_s": 5.727,
-        "prefill_tokens_per_s": 400.8056394763402,
-        "decode_tokens_per_s": 44.823906083244445,
-        "time_to_first_token_s": 0.9929999999999854,
-        "time_per_output_token_s": 0.022309523809523786,
-        "grammar_init_s": 0.12999999999998546,
-        "grammar_per_token_s": 0.00006190476190483121
+        "e2e_latency_s": 5.696,
+        "prefill_tokens_per_s": 400,
+        "decode_tokens_per_s": 45.01607717041885,
+        "time_to_first_token_s": 0.995,
+        "time_per_output_token_s": 0.022214285714285294,
+        "grammar_init_s": 0.128,
+        "grammar_per_token_s": 0.00007142857142843286
       }
     },
     "generated_output": "{\n  \"policyholder\": {\n    \"name\": \"Emily Carter\",\n    \"address\": \"254 Ocean View Lane, Coastal City, CC 90210\",\n    \"phone\": \"(555) 123-4567\"\n  },\n  \"coverageDetails\": [\n    {\n      \"coverageType\": \"Homeowners\",\n      \"coverageAmount\": 350000\n    },\n    {\n      \"coverageType\": \"Auto Collision\",\n      \"coverageAmount\": 50000\n    },\n    {\n      \"coverageType\": \"Personal Liability\",\n      \"coverageAmount\": 100000\n    }\n  ],\n  \"premium\": {\n    \"amount\": 2500,\n    \"frequency\": \"semi-annually\"\n  }\n}",
@@ -846,13 +846,13 @@
       "prompt_tokens": 456,
       "total_tokens": 593,
       "extra": {
-        "e2e_latency_s": 4.166,
-        "prefill_tokens_per_s": 399.2994746059545,
-        "decode_tokens_per_s": 45.66666666666715,
-        "time_to_first_token_s": 1.142,
-        "time_per_output_token_s": 0.02189781021897787,
-        "grammar_init_s": 0.098,
-        "grammar_per_token_s": 0.00009489051094890511
+        "e2e_latency_s": 4.255,
+        "prefill_tokens_per_s": 398.9501312335958,
+        "decode_tokens_per_s": 44.336569579288444,
+        "time_to_first_token_s": 1.143,
+        "time_per_output_token_s": 0.022554744525547232,
+        "grammar_init_s": 0.114,
+        "grammar_per_token_s": 0.00010218978102189785
       }
     },
     "generated_output": "{\n  \"orderID\": \"PO123456\",\n  \"orderDate\": \"2023-04-15\",\n  \"items\": [\n    {\n      \"productID\": \"PRD001\",\n      \"quantity\": 10,\n      \"unitPrice\": 29.99\n    },\n    {\n      \"productID\": \"PRD002\",\n      \"quantity\": 5,\n      \"unitPrice\": 49.99\n    }\n  ],\n  \"totalAmount\": 549.85\n}",
@@ -875,13 +875,13 @@
       "prompt_tokens": 279,
       "total_tokens": 356,
       "extra": {
-        "e2e_latency_s": 2.421,
-        "prefill_tokens_per_s": 404.9346879535559,
-        "decode_tokens_per_s": 44.87179487179375,
-        "time_to_first_token_s": 0.689,
-        "time_per_output_token_s": 0.022285714285714842,
-        "grammar_init_s": 0.09,
-        "grammar_per_token_s": 0.00007792207792188894
+        "e2e_latency_s": 2.444,
+        "prefill_tokens_per_s": 406.1135371179039,
+        "decode_tokens_per_s": 44.17670682730963,
+        "time_to_first_token_s": 0.687,
+        "time_per_output_token_s": 0.022636363636363437,
+        "grammar_init_s": 0.092,
+        "grammar_per_token_s": 0.00007792207792226691
       }
     },
     "generated_output": "{\n  \"productName\": \"AquaPure Essence\",\n  \"productID\": \"AP12345\",\n  \"ingredients\": [\n    \"aloe vera\",\n    \"hyaluronic acid\",\n    \"green tea extract\"\n  ],\n  \"price\": 29.99\n}",
@@ -904,13 +904,13 @@
       "prompt_tokens": 289,
       "total_tokens": 358,
       "extra": {
-        "e2e_latency_s": 2.3,
-        "prefill_tokens_per_s": 379.7634691195795,
-        "decode_tokens_per_s": 45.157068062827236,
-        "time_to_first_token_s": 0.761,
-        "time_per_output_token_s": 0.022144927536231877,
-        "grammar_init_s": 0.074,
-        "grammar_per_token_s": 0.00008695652173891954
+        "e2e_latency_s": 2.361,
+        "prefill_tokens_per_s": 378.76802096985585,
+        "decode_tokens_per_s": 43.36895034569454,
+        "time_to_first_token_s": 0.763,
+        "time_per_output_token_s": 0.023057971014492747,
+        "grammar_init_s": 0.08,
+        "grammar_per_token_s": 0.00004347826086956522
       }
     },
     "generated_output": "{\n  \"vehicleID\": \"VH12345X\",\n  \"serviceDate\": \"2023-04-15\",\n  \"serviceType\": \"Oil Change\",\n  \"serviceNotes\": \"Replaced oil filter, used synthetic oil\"\n}",
@@ -929,20 +929,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 374,
+      "completion_tokens": 372,
       "prompt_tokens": 502,
-      "total_tokens": 876,
+      "total_tokens": 874,
       "extra": {
-        "e2e_latency_s": 9.73,
-        "prefill_tokens_per_s": 407.46753246753246,
-        "decode_tokens_per_s": 44.50261780104748,
-        "time_to_first_token_s": 1.232,
-        "time_per_output_token_s": 0.022470588235293937,
-        "grammar_init_s": 0.116,
-        "grammar_per_token_s": 0.00008021390374339334
+        "e2e_latency_s": 9.733,
+        "prefill_tokens_per_s": 405.49273021001613,
+        "decode_tokens_per_s": 44.29626101452811,
+        "time_to_first_token_s": 1.238,
+        "time_per_output_token_s": 0.02257526881720387,
+        "grammar_init_s": 0.122,
+        "grammar_per_token_s": 0.00007258064516113387
       }
     },
-    "generated_output": "{\n  \"statementID\": \"GDB-4512\",\n  \"customerID\": \"CUST-789654\",\n  \"startDate\": \"2023-01-01\",\n  \"endDate\": \"2 meshef January 31, 2023\",\n  \"transactions\": [\n    {\n      \"transactionID\": \"TX-10001\",\n      \"transactionType\": \"Deposit\",\n      \"amount\": 2000.00,\n      \"timestamp\": \"2023-01-05T00:00:00Z\"\n    },\n    {\n      \"transactionID\": \"TX-10002\",\n      \"transactionType\": \"Withdrawal\",\n      \"amount\": 500.00,\n      \"timestamp\": \"2023-01-10T00:00:00Z\"\n    },\n    {\n      \"transactionID\": \"TX-10003\",\n      \"transactionType\": \"Payment\",\n      \"amount\": 1200.00,\n      \"timestamp\": \"2023-01-15T00:00:00Z\"\n    },\n    {\n      \"transactionID\": \"TX-10004\",\n      \"transactionType\": \"Interest Credited\",\n      \"amount\": 50.00,\n      \"timestamp\": \"2023-01-25T00:00:00Z\"\n    }\n  ]\n}",
+    "generated_output": "{\n  \"statementID\": \"GDB-4512\",\n  \"customerID\": \"CUST-789654\",\n  \"startDate\": \"2023-01-01\",\n  \"endDate\": \"2 comments on the requested JSON object: The JSON object you've requested lacks the formatted date strings for both \",\n  \"transactions\": [\n    {\n      \"transactionID\": \"TX-10001\",\n      \"transactionType\": \"Deposit\",\n      \"amount\": 2000,\n      \"timestamp\": \"2023-01-05T00:00:00Z\"\n    },\n    {\n      \"transactionID\": \"TX-10002\",\n      \"transactionType\": \"Withdrawal\",\n      \"amount\": 500,\n      \"timestamp\": \"2023-01-10T00:00:00Z\"\n    },\n    {\n      \"transactionID\": \"TX-10003\",\n      \"transactionType\": \"Payment\",\n      \"amount\": 1200,\n      \"timestamp\": \"2023-01-15T00:00:00Z\"\n    },\n    {\n      \"transactionID\": \"TX-10004\",\n      \"transactionType\": \"Interest Credited\",\n      \"amount\": 50,\n      \"timestamp\": \"2023-01-25T00:00:00Z\"\n    }\n  ]\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'AccountStatement', 'type': 'object', 'properties': {'statementID': {'title': 'Statement ID', 'type': 'string'}, 'customerID': {'title': 'Customer ID', 'type': 'string'}, 'startDate': {'title': 'Start Date', 'type': 'string', 'format': 'date'}, 'endDate': {'title': 'End Date', 'type': 'string', 'format': 'date'}, 'transactions': {'title': 'Transactions', 'type': 'array', 'items': {'type': 'object', 'properties': {'transactionID': {'title': 'Transaction ID', 'type': 'string'}, 'transactionType': {'title': 'Transaction Type', 'type': 'string'}, 'amount': {'title': 'Amount', 'type': 'number'}, 'timestamp': {'title': 'Timestamp', 'type': 'string', 'format': 'date-time'}}, 'required': ['transactionID', 'transactionType', 'amount', 'timestamp']}}}, 'required': ['statementID', 'customerID', 'startDate', 'endDate', 'transactions']}\n</schema>\n",
@@ -958,20 +958,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 2,
+      "completion_tokens": 95,
       "prompt_tokens": 310,
-      "total_tokens": 312,
+      "total_tokens": 405,
       "extra": {
-        "e2e_latency_s": 0.804,
-        "prefill_tokens_per_s": 404.69973890339423,
-        "decode_tokens_per_s": 52.631578947368425,
-        "time_to_first_token_s": 0.766,
-        "time_per_output_token_s": 0.019,
-        "grammar_init_s": 0.051,
-        "grammar_per_token_s": 0
+        "e2e_latency_s": 3.052,
+        "prefill_tokens_per_s": 404.17209908734566,
+        "decode_tokens_per_s": 41.79498460184807,
+        "time_to_first_token_s": 0.7670000000000146,
+        "time_per_output_token_s": 0.023926315789473518,
+        "grammar_init_s": 0.053,
+        "grammar_per_token_s": 0.00004210526315789474
       }
     },
-    "generated_output": "{}",
+    "generated_output": "{\".LanguageLearning\": {\".target_language\": \"Spanish\",\".current_proficiency\": \"Basic\",\".learning_goals\": [\"Improve vocabulary\",\".Master Spanish grammar\",\".Become confident in conversational Spanish\"],\".recommended_resources\": [\"Duolingo\",\".Spanish Grammar in Context\",\".Language exchange meetups\",\".Spanish podcasts during commute\"]}}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'LanguageLearning': {'type': 'object', 'properties': {'target_language': {'type': 'string'}, 'current_proficiency': {'type': 'string'}, 'learning_goals': {'type': 'array', 'items': {'type': 'string'}}, 'recommended_resources': {'type': 'array', 'items': {'type': 'string'}}}, 'required': ['target_language', 'current_proficiency', 'learning_goals', 'recommended_resources']}}\n</schema>\n",
@@ -987,20 +987,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 117,
+      "completion_tokens": 116,
       "prompt_tokens": 380,
-      "total_tokens": 497,
+      "total_tokens": 496,
       "extra": {
-        "e2e_latency_s": 3.541,
+        "e2e_latency_s": 3.573,
         "prefill_tokens_per_s": 408.1632653061224,
-        "decode_tokens_per_s": 44.982698961937245,
+        "decode_tokens_per_s": 44.22417079679783,
         "time_to_first_token_s": 0.931,
-        "time_per_output_token_s": 0.022230769230769463,
-        "grammar_init_s": 0.086,
-        "grammar_per_token_s": 0.00010256410256410259
+        "time_per_output_token_s": 0.022612068965517106,
+        "grammar_init_s": 0.095,
+        "grammar_per_token_s": 0.00009482758620689655
       }
     },
-    "generated_output": "{\n  \"reviewId\": \"RVW000112233\",\n  \"productId\": \"EARBUDS1234\",\n  \"reviewer\": {\n    \"userId\": \"USER5678\",\n    \"name\": \"Alex Smith\"\n  },\n  \"rating\": 4,\n  \"comments\": \"The earbuds have great sound quality and the battery life is impressive. However, I experienced some discomfermity after wearing them for extended periods.\"\n}",
+    "generated_output": "{\n  \"reviewId\": \"RVW000112233\",\n  \"productId\": \"EARBUDS1234\",\n  \"reviewer\": {\n    \"userId\": \"USER5678\",\n    \"name\": \"Alex Smith\"\n  },\n  \"rating\": 4,\n  \"comments\": \"The earbuds have great sound quality and the battery life is impressive. However, I experienced some discomferm after wearing them for extended periods.\"\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'UserReview', 'type': 'object', 'properties': {'reviewId': {'title': 'Review ID', 'type': 'string'}, 'productId': {'title': 'Product ID', 'type': 'string'}, 'reviewer': {'title': 'Reviewer', 'type': 'object', 'properties': {'userId': {'title': 'User ID', 'type': 'string'}, 'name': {'title': 'Name', 'type': 'string'}}, 'required': ['userId', 'name']}, 'rating': {'title': 'Rating', 'type': 'integer', 'minimum': 1, 'maximum': 5}, 'comments': {'title': 'Comments', 'type': 'string'}}, 'required': ['reviewId', 'productId', 'reviewer', 'rating', 'comments']}\n</schema>\n",
@@ -1020,13 +1020,13 @@
       "prompt_tokens": 507,
       "total_tokens": 647,
       "extra": {
-        "e2e_latency_s": 4.391,
-        "prefill_tokens_per_s": 409.2009685230024,
-        "decode_tokens_per_s": 44.57179242279508,
-        "time_to_first_token_s": 1.239,
-        "time_per_output_token_s": 0.022435714285714392,
-        "grammar_init_s": 0.10900000000001456,
-        "grammar_per_token_s": 0.00005714285714275321
+        "e2e_latency_s": 4.405,
+        "prefill_tokens_per_s": 409.8625707356411,
+        "decode_tokens_per_s": 44.52926208651317,
+        "time_to_first_token_s": 1.2370000000000292,
+        "time_per_output_token_s": 0.022457142857143272,
+        "grammar_init_s": 0.11500000000001455,
+        "grammar_per_token_s": 0.00007142857142846749
       }
     },
     "generated_output": "{\n  \"policyNumber\": \"MI29384\",\n  \"coverageDetails\": {\n    \"coverageAmount\": 250000,\n    \"effectiveDate\": \"2023-04-01\",\n    \"expirationDate\": \"2028-04-01\"\n  },\n  \"premium\": 1500,\n  \"insurer\": {\n    \"insurerName\": \"Shield Insurance\",\n    \"insurerContact\": \"(555) 123-4567\"\n  }\n}",
@@ -1049,13 +1049,13 @@
       "prompt_tokens": 298,
       "total_tokens": 351,
       "extra": {
-        "e2e_latency_s": 1.926,
-        "prefill_tokens_per_s": 392.10526315789474,
-        "decode_tokens_per_s": 45.68965517241265,
-        "time_to_first_token_s": 0.76,
-        "time_per_output_token_s": 0.021886792452830737,
-        "grammar_init_s": 0.07999999999998544,
-        "grammar_per_token_s": 0.000094339622641784
+        "e2e_latency_s": 1.916,
+        "prefill_tokens_per_s": 391.59001314060447,
+        "decode_tokens_per_s": 46.08695652173797,
+        "time_to_first_token_s": 0.761,
+        "time_per_output_token_s": 0.021698113207547717,
+        "grammar_init_s": 0.086,
+        "grammar_per_token_s": 0.00011320754716981132
       }
     },
     "generated_output": "{\n  \"drugID\": \"PH-112233\",\n  \"quantityAvailable\": 150,\n  \"location\": \"Warehouse A\",\n  \"reorderThreshold\": 50\n}",
@@ -1078,13 +1078,13 @@
       "prompt_tokens": 292,
       "total_tokens": 323,
       "extra": {
-        "e2e_latency_s": 1.421,
-        "prefill_tokens_per_s": 384.2105263157895,
-        "decode_tokens_per_s": 47.184170471841696,
-        "time_to_first_token_s": 0.76,
-        "time_per_output_token_s": 0.021193548387096778,
-        "grammar_init_s": 0.06499999999998544,
-        "grammar_per_token_s": 0
+        "e2e_latency_s": 1.454,
+        "prefill_tokens_per_s": 384.2105263158042,
+        "decode_tokens_per_s": 44.797687861271655,
+        "time_to_first_token_s": 0.7599999999999709,
+        "time_per_output_token_s": 0.0223225806451613,
+        "grammar_init_s": 0.0649999999999709,
+        "grammar_per_token_s": 0.000161290322581584
       }
     },
     "generated_output": "{\n  \"isMember\": true,\n  \"membershipNumber\": \"1234567890\"\n}",
@@ -1107,13 +1107,13 @@
       "prompt_tokens": 172,
       "total_tokens": 230,
       "extra": {
-        "e2e_latency_s": 1.819,
-        "prefill_tokens_per_s": 354.63917525773195,
-        "decode_tokens_per_s": 43.67469879518167,
-        "time_to_first_token_s": 0.485,
-        "time_per_output_token_s": 0.022896551724137435,
-        "grammar_init_s": 0.064,
-        "grammar_per_token_s": 0.00008620689655172414
+        "e2e_latency_s": 1.809,
+        "prefill_tokens_per_s": 355.3719008264463,
+        "decode_tokens_per_s": 43.97270659590792,
+        "time_to_first_token_s": 0.484,
+        "time_per_output_token_s": 0.022741379310343826,
+        "grammar_init_s": 0.067,
+        "grammar_per_token_s": 0.00006896551724137931
       }
     },
     "generated_output": "{\n  \"name\": \"Emily Johnson\",\n  \"email\": \"emily.johnson@example.com\",\n  \"shippingAddress\": \"742 Evergreen Terrace, Springfield, IL, 62704\"\n}",
@@ -1132,20 +1132,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 11,
+      "completion_tokens": 18,
       "prompt_tokens": 271,
-      "total_tokens": 282,
+      "total_tokens": 289,
       "extra": {
-        "e2e_latency_s": 0.951,
+        "e2e_latency_s": 1.043,
         "prefill_tokens_per_s": 396.1988304093567,
-        "decode_tokens_per_s": 41.509433962264154,
+        "decode_tokens_per_s": 50.56179775280899,
         "time_to_first_token_s": 0.684,
-        "time_per_output_token_s": 0.024090909090909086,
-        "grammar_init_s": 0.071,
-        "grammar_per_token_s": 0.00018181818182082764
+        "time_per_output_token_s": 0.019777777777777776,
+        "grammar_init_s": 0.076,
+        "grammar_per_token_s": 0.00016666666666666666
       }
     },
-    "generated_output": "{\n  \"propertiesCount\": 7\n}",
+    "generated_output": "{\n  \"foo\": true,\n  \"propertiesCount\": 7\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'Conditional Validation with dependentSchemas', 'type': 'object', 'properties': {'foo': {'type': 'boolean'}, 'propertiesCount': {'type': 'integer', 'minimum': 0}}, 'dependentSchemas': {'foo': {'required': ['propertiesCount'], 'properties': {'propertiesCount': {'minimum': 7}}}}}\n</schema>\n",
@@ -1165,13 +1165,13 @@
       "prompt_tokens": 268,
       "total_tokens": 321,
       "extra": {
-        "e2e_latency_s": 1.776,
-        "prefill_tokens_per_s": 391.24087591240874,
-        "decode_tokens_per_s": 48.89298892988665,
-        "time_to_first_token_s": 0.685,
-        "time_per_output_token_s": 0.020452830188680354,
-        "grammar_init_s": 0.073,
-        "grammar_per_token_s": 0.00020754716981077166
+        "e2e_latency_s": 1.856,
+        "prefill_tokens_per_s": 392.38653001464127,
+        "decode_tokens_per_s": 45.37671232876824,
+        "time_to_first_token_s": 0.683,
+        "time_per_output_token_s": 0.02203773584905606,
+        "grammar_init_s": 0.0750000000000291,
+        "grammar_per_token_s": 0.00005660377358490566
       }
     },
     "generated_output": "{\n  \"wireLength\": 200,\n  \"insulationType\": \"PVC\",\n  \"voltageRating\": 600,\n  \"manufacturer\": \"CopperWire Inc.\"\n}",
@@ -1194,13 +1194,13 @@
       "prompt_tokens": 271,
       "total_tokens": 345,
       "extra": {
-        "e2e_latency_s": 2.294,
-        "prefill_tokens_per_s": 392.7536231884224,
-        "decode_tokens_per_s": 46.54088050314381,
-        "time_to_first_token_s": 0.6899999999999709,
-        "time_per_output_token_s": 0.021486486486486874,
-        "grammar_init_s": 0.0749999999999709,
-        "grammar_per_token_s": 0.00005405405405444735
+        "e2e_latency_s": 2.372,
+        "prefill_tokens_per_s": 396.1988304093567,
+        "decode_tokens_per_s": 43.995243757430885,
+        "time_to_first_token_s": 0.684,
+        "time_per_output_token_s": 0.022729729729730117,
+        "grammar_init_s": 0.078,
+        "grammar_per_token_s": 0.00008108108108147437
       }
     },
     "generated_output": "{\n  \"subscriberID\": \"GTX-908472-MN\",\n  \"phoneNumber\": \"+1234567890\",\n  \"planType\": \"Unlimited Data Plus\",\n  \"activationDate\": \"2023-04-15\"\n}",
@@ -1219,20 +1219,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 50,
+      "completion_tokens": 64,
       "prompt_tokens": 321,
-      "total_tokens": 371,
+      "total_tokens": 385,
       "extra": {
-        "e2e_latency_s": 1.936,
-        "prefill_tokens_per_s": 375.4385964912153,
-        "decode_tokens_per_s": 46.51162790697926,
-        "time_to_first_token_s": 0.8550000000000291,
-        "time_per_output_token_s": 0.02149999999999884,
-        "grammar_init_s": 0.072,
-        "grammar_per_token_s": 0.00009999999999941794
+        "e2e_latency_s": 2.328,
+        "prefill_tokens_per_s": 376.31887456037515,
+        "decode_tokens_per_s": 43.68600682594031,
+        "time_to_first_token_s": 0.853,
+        "time_per_output_token_s": 0.022890624999999085,
+        "grammar_init_s": 0.0760000000000291,
+        "grammar_per_token_s": 0.00009375
       }
     },
-    "generated_output": "{\n  \"toyName\": \"string\",\n  \"ageGroup\": \"string\",\n  \"safetyWarnings\": [\n    \"string\"\n  ],\n  \"SKU\": \"string\"\n}",
+    "generated_output": "{\n  \"toyName\": \"Space Explorer\",\n  \"ageGroup\": \"6-10\",\n  \"safetyWarnings\": [\n    \"Avoid use near water\"\n  ],\n  \"SKU\": \"SE123456\"\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'properties': {'toyName': {'title': 'Toy Name', 'type': 'string'}, 'ageGroup': {'title': 'Age Group', 'type': 'string'}, 'safetyWarnings': {'title': 'Safety Warnings', 'type': 'array', 'items': {'type': 'string'}}, 'SKU': {'title': 'SKU', 'type': 'string'}}, 'required': ['toyName', 'ageGroup', 'safetyWarnings', 'SKU'], 'title': 'ToyInventoryEntry', 'type': 'object'}\n</schema>\n",
@@ -1252,13 +1252,13 @@
       "prompt_tokens": 356,
       "total_tokens": 468,
       "extra": {
-        "e2e_latency_s": 4.037,
-        "prefill_tokens_per_s": 385.28138528138527,
-        "decode_tokens_per_s": 36.2811791383227,
-        "time_to_first_token_s": 0.924,
-        "time_per_output_token_s": 0.027562499999999466,
-        "grammar_init_s": 0.072,
-        "grammar_per_token_s": 0.00009821428571454557
+        "e2e_latency_s": 3.461,
+        "prefill_tokens_per_s": 386.11713665943597,
+        "decode_tokens_per_s": 44.268774703556346,
+        "time_to_first_token_s": 0.922,
+        "time_per_output_token_s": 0.022589285714286207,
+        "grammar_init_s": 0.077,
+        "grammar_per_token_s": 0.000053571428571688425
       }
     },
     "generated_output": "{\n  \"chemicalID\": \"GC2022-7705\",\n  \"name\": \"Lignin-derived polymeric compound\",\n  \"type\": \"Polymer\",\n  \"applications\": [\n    \"Energy storage\",\n    \"Targeted drug delivery\",\n    \"Efficient adsorption\",\n    \"Catalysis\",\n    \"Functional packaging\",\n    \"Slow-release fertilizers\"\n  ]\n}",
@@ -1277,20 +1277,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 54,
+      "completion_tokens": 59,
       "prompt_tokens": 265,
-      "total_tokens": 319,
+      "total_tokens": 324,
       "extra": {
-        "e2e_latency_s": 1.885,
-        "prefill_tokens_per_s": 387.9941434846266,
-        "decode_tokens_per_s": 45.037531276062275,
-        "time_to_first_token_s": 0.683,
-        "time_per_output_token_s": 0.022203703703704253,
-        "grammar_init_s": 0.085,
-        "grammar_per_token_s": 0.000037037037037576
+        "e2e_latency_s": 1.988,
+        "prefill_tokens_per_s": 387.4269005847953,
+        "decode_tokens_per_s": 45.48959136468773,
+        "time_to_first_token_s": 0.684,
+        "time_per_output_token_s": 0.02198305084745763,
+        "grammar_init_s": 0.089,
+        "grammar_per_token_s": 0.00003389830508474576
       }
     },
-    "generated_output": "{\n  \"siteName\": \"Olympic Dam\",\n  \"location\": \"South Australia\",\n  \"mineralType\": \"uranium, copper, gold, silver\",\n  \"operationalStatus\": \"Active\"\n}",
+    "generated_output": "{\n  \"siteName\": \"Olympic Dam\",\n  \"location\": \"South Australia, Wilks Corner\",\n  \"mineralType\": \"uranium, copper, gold, silver\",\n  \"operationalStatus\": \"Active\"\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'MiningSite', 'type': 'object', 'properties': {'siteName': {'title': 'Site Name', 'type': 'string'}, 'location': {'title': 'Location', 'type': 'string'}, 'mineralType': {'title': 'Mineral Type', 'type': 'string'}, 'operationalStatus': {'title': 'Operational Status', 'type': 'string', 'enum': ['Active', 'Inactive', 'Under Development']}}, 'required': ['siteName', 'location', 'mineralType', 'operationalStatus']}\n</schema>\n",
@@ -1306,20 +1306,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 46,
+      "completion_tokens": 176,
       "prompt_tokens": 174,
-      "total_tokens": 220,
+      "total_tokens": 350,
       "extra": {
-        "e2e_latency_s": 1.503,
-        "prefill_tokens_per_s": 358.7628865979382,
-        "decode_tokens_per_s": 45.32019704433495,
-        "time_to_first_token_s": 0.485,
-        "time_per_output_token_s": 0.02206521739130436,
-        "grammar_init_s": 0.05,
-        "grammar_per_token_s": 0.00006521739130434783
+        "e2e_latency_s": 4.606,
+        "prefill_tokens_per_s": 358.0246913580247,
+        "decode_tokens_per_s": 43.22200392927376,
+        "time_to_first_token_s": 0.486,
+        "time_per_output_token_s": 0.023136363636363275,
+        "grammar_init_s": 0.052,
+        "grammar_per_token_s": 0.00009090909090942165
       }
     },
-    "generated_output": "{\"cropType\": \"wheat\",\"harvestedArea\": 250,\".adjustment\": 7.8,\"productionDate\": \"2023-09-20\"}",
+    "generated_output": "{\".@type\": \"cropProductionReport\",\".@context\": \"AGRI\",\".@groupby\": \"@SCHEMA:\",\".@type\": \"cropProduction\",\".@attribute\": \"cropType\",\".@value\": \"Wheat\",\".@measure\": \"@SCHEMA:harvestedArea\",\".@unit\": \"hectares\",\".@value\": 250,\".@entity\": \"YourFarmingCompany\",\".@performance\": \"@SCHEMA:yield\",\".@unit\": \"tonnesPerHectare\",\".@value\": 7.8,\".@entity\": \"YourFarmingCompany\",\".@recordedAt\": \"@SCHEMA:productionDate\",\".@value\": \"2023-09-20\"}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'cropType': 'string', 'harvestedArea': 'number', 'yield': 'number', 'productionDate': 'string'}\n</schema>\n",
@@ -1339,13 +1339,13 @@
       "prompt_tokens": 254,
       "total_tokens": 296,
       "extra": {
-        "e2e_latency_s": 1.5,
-        "prefill_tokens_per_s": 412.3376623376623,
-        "decode_tokens_per_s": 47.72727272727271,
-        "time_to_first_token_s": 0.616,
-        "time_per_output_token_s": 0.020952380952380962,
-        "grammar_init_s": 0.063,
-        "grammar_per_token_s": 0.00004761904761974057
+        "e2e_latency_s": 1.469,
+        "prefill_tokens_per_s": 411.66936790923825,
+        "decode_tokens_per_s": 49.70414201183429,
+        "time_to_first_token_s": 0.617,
+        "time_per_output_token_s": 0.02011904761904763,
+        "grammar_init_s": 0.07200000000002911,
+        "grammar_per_token_s": 0.00004761904761904762
       }
     },
     "generated_output": "{\n  \"chest\": 38,\n  \"waist\": 32,\n  \"hips\": 40,\n  \"inseam\": 30\n}",
@@ -1368,13 +1368,13 @@
       "prompt_tokens": 278,
       "total_tokens": 340,
       "extra": {
-        "e2e_latency_s": 2.065,
-        "prefill_tokens_per_s": 404.6579330422125,
-        "decode_tokens_per_s": 45.15659140567909,
-        "time_to_first_token_s": 0.687,
-        "time_per_output_token_s": 0.022145161290323515,
-        "grammar_init_s": 0.0820000000000291,
-        "grammar_per_token_s": 0.00011290322580692104
+        "e2e_latency_s": 2.028,
+        "prefill_tokens_per_s": 405.83941605839414,
+        "decode_tokens_per_s": 46.407185628744536,
+        "time_to_first_token_s": 0.685,
+        "time_per_output_token_s": 0.021548387096773255,
+        "grammar_init_s": 0.089,
+        "grammar_per_token_s": 0.00014516129032211123
       }
     },
     "generated_output": "{\n  \"productId\": \"XT42-4K\",\n  \"productName\": \"Smart LED TV\",\n  \"price\": 379.99,\n  \"category\": \"Electronics\",\n  \"availabilityStatus\": true\n}",
@@ -1393,20 +1393,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 70,
+      "completion_tokens": 72,
       "prompt_tokens": 342,
-      "total_tokens": 412,
+      "total_tokens": 414,
       "extra": {
-        "e2e_latency_s": 2.458,
-        "prefill_tokens_per_s": 396.75174013921117,
-        "decode_tokens_per_s": 44.10838059231255,
-        "time_to_first_token_s": 0.862,
-        "time_per_output_token_s": 0.022671428571428565,
-        "grammar_init_s": 0.085,
-        "grammar_per_token_s": 0.00005714285714285714
+        "e2e_latency_s": 2.75,
+        "prefill_tokens_per_s": 396.75174013919775,
+        "decode_tokens_per_s": 38.257173219978746,
+        "time_to_first_token_s": 0.8620000000000291,
+        "time_per_output_token_s": 0.02613888888888889,
+        "grammar_init_s": 0.091,
+        "grammar_per_token_s": 0.00006944444444404023
       }
     },
-    "generated_output": "{\n  \"productId\": \"CNTR-001234\",\n  \"materialType\": \"plastic\",\n  \"dimensions\": {\n    \"height\": 22,\n    \"diameter\": 6.5\n  },\n  \"capacity\": 500\n}",
+    "generated_output": "{\n  \"productId\": \"CNTR-001234\",\n  \"materialType\": \"plastic\",\n  \"dimensions\": {\n    \"height\": 22.0,\n    \"diameter\": 6.5\n  },\n  \"capacity\": 500\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'ContainerProduct', 'type': 'object', 'properties': {'productId': {'title': 'Product ID', 'type': 'string'}, 'materialType': {'title': 'Material Type', 'type': 'string', 'enum': ['metal', 'glass', 'plastic']}, 'dimensions': {'title': 'Dimensions', 'type': 'object', 'properties': {'height': {'title': 'Height', 'type': 'number'}, 'diameter': {'title': 'Diameter', 'type': 'number'}}, 'required': ['height', 'diameter']}, 'capacity': {'title': 'Capacity', 'type': 'number'}}, 'required': ['productId', 'materialType', 'dimensions', 'capacity']}\n</schema>\n",
@@ -1422,20 +1422,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 66,
+      "completion_tokens": 73,
       "prompt_tokens": 299,
-      "total_tokens": 365,
+      "total_tokens": 372,
       "extra": {
-        "e2e_latency_s": 2.253,
+        "e2e_latency_s": 2.402,
         "prefill_tokens_per_s": 392.3884514435695,
-        "decode_tokens_per_s": 44.62474645030602,
+        "decode_tokens_per_s": 44.78527607362045,
         "time_to_first_token_s": 0.762,
-        "time_per_output_token_s": 0.022409090909090025,
-        "grammar_init_s": 0.074,
-        "grammar_per_token_s": 0.000060606060606060605
+        "time_per_output_token_s": 0.02232876712328726,
+        "grammar_init_s": 0.081,
+        "grammar_per_token_s": 0.00010958904109549171
       }
     },
-    "generated_output": "{\n  \"flightNumber\": \"AF113\",\n  \"departureAirport\": \"Charles de Gaulle Airport\",\n  \"arrivalAirport\": \"John F. Kennedy International Airport\",\n  \"flightDuration\": \"8 hours 30 minutes\"\n}",
+    "generated_output": "{\n  \"flightNumber\": \"AF113\",\n  \"departureAirport\": \"Charles de Gaulle Airport (CDG)\",\n  \"arrivalAirport\": \"John F. Kennedy International Airport (JFK)\",\n  \"flightDuration\": \"8 hours 30 minutes\"\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'properties': {'flightNumber': {'title': 'Flight Number', 'type': 'string'}, 'departureAirport': {'title': 'Departure Airport', 'type': 'string'}, 'arrivalAirport': {'title': 'Arrival Airport', 'type': 'string'}, 'flightDuration': {'title': 'Flight Duration', 'type': 'string'}}, 'required': ['flightNumber', 'departureAirport', 'arrivalAirport', 'flightDuration'], 'title': 'FlightLogEntry', 'type': 'object'}\n</schema>\n",
@@ -1451,20 +1451,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 177,
+      "completion_tokens": 202,
       "prompt_tokens": 261,
-      "total_tokens": 438,
+      "total_tokens": 463,
       "extra": {
-        "e2e_latency_s": 4.588,
-        "prefill_tokens_per_s": 382.1376281112738,
-        "decode_tokens_per_s": 45.6068023705227,
-        "time_to_first_token_s": 0.683,
-        "time_per_output_token_s": 0.021926553672316555,
-        "grammar_init_s": 0.096,
-        "grammar_per_token_s": 0.00003389830508408805
+        "e2e_latency_s": 5.197,
+        "prefill_tokens_per_s": 383.2599118942731,
+        "decode_tokens_per_s": 45.018943614888094,
+        "time_to_first_token_s": 0.681,
+        "time_per_output_token_s": 0.022212871287128396,
+        "grammar_init_s": 0.101,
+        "grammar_per_token_s": 0.00007920792079222331
       }
     },
-    "generated_output": "{\n  \"BudgetManagement\": {\n    \"monthly_income\": 4500,\n    \"expenses\": [\n      {\n        \"category\": \"Rent\",\n        \"amount\": 1200\n      },\n      {\n        \"category\": \"Groceries\",\n        \"amount\": 600\n      },\n      {\n        \"category\": \"Utilities\",\n        \"amount\": 300\n      },\n      {\n        \"category\": \"Transportation\",\n        \"amount\": 250\n      },\n      {\n        \"category\": \"Insurance\",\n        \"amount\": 150\n      }\n    ],\n    \"savings_goal\": 500\n  }\n}",
+    "generated_output": "{\n  \"BudgetManagement\": {\n    \"monthly_income\": 4500,\n    \"expenses\": [\n      {\n        \"category\": \"Rent\",\n        \"amount\": 1200\n      },\n      {\n        \"category\": \"Groceries\",\n        \"amount\": 600\n      },\n      {\n        \"category\": \"Utilities\",\n        \"amount\": 300\n      },\n      {\n        \"category\": \"Transportation\",\n        \"amount\": 250\n      },\n      {\n        \"category\": \"Insurance\",\n        \"amount\": 150\n      },\n      {\n        \"category\": \"Savings\",\n        \"amount\": 500\n      }\n    ],\n    \"savings_goal\": 500\n  }\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'type': 'object', 'properties': {'BudgetManagement': {'type': 'object', 'properties': {'monthly_income': {'type': 'number'}, 'expenses': {'type': 'array', 'items': {'type': 'object', 'properties': {'category': {'type': 'string'}, 'amount': {'type': 'number'}}, 'required': ['category', 'amount']}}, 'savings_goal': {'type': 'number'}}, 'required': ['monthly_income', 'expenses', 'savings_goal']}}}\n</schema>\n",
@@ -1484,13 +1484,13 @@
       "prompt_tokens": 225,
       "total_tokens": 292,
       "extra": {
-        "e2e_latency_s": 2.145,
+        "e2e_latency_s": 2.149,
         "prefill_tokens_per_s": 370.67545304777593,
-        "decode_tokens_per_s": 43.905635648756586,
+        "decode_tokens_per_s": 43.619791666666686,
         "time_to_first_token_s": 0.607,
-        "time_per_output_token_s": 0.022776119402984206,
-        "grammar_init_s": 0.078,
-        "grammar_per_token_s": 0.00004477611940298508
+        "time_per_output_token_s": 0.02292537313432835,
+        "grammar_init_s": 0.084,
+        "grammar_per_token_s": 0.000059701492537313435
       }
     },
     "generated_output": "{\n  \"flightNumber\": \"AA 100\",\n  \"date\": \"2023-04-15\",\n  \"status\": {\n    \"statusCode\": \"ON_TIME\",\n    \"statusMessage\": \"The flight is on schedule.\"\n  }\n}",
@@ -1513,13 +1513,13 @@
       "prompt_tokens": 352,
       "total_tokens": 432,
       "extra": {
-        "e2e_latency_s": 2.634,
-        "prefill_tokens_per_s": 383.025027203482,
-        "decode_tokens_per_s": 47.00352526439404,
-        "time_to_first_token_s": 0.919,
-        "time_per_output_token_s": 0.021275000000000356,
-        "grammar_init_s": 0.074,
-        "grammar_per_token_s": 0.00011249999999963619
+        "e2e_latency_s": 2.804,
+        "prefill_tokens_per_s": 380.9523809523809,
+        "decode_tokens_per_s": 42.89544235924868,
+        "time_to_first_token_s": 0.924,
+        "time_per_output_token_s": 0.023312500000000354,
+        "grammar_init_s": 0.0780000000000291,
+        "grammar_per_token_s": 0.0000749999999992724
       }
     },
     "generated_output": "{\n  \"itemID\": \"SSD860EVO-2TB\",\n  \"itemName\": \"Samsung 860 EVO 2TB SATA III SSDs\",\n  \"itemCategory\": \"Storage Devices\",\n  \"quantity\": 20,\n  \"supplier\": \"TechSource Distributors\"\n}",
@@ -1538,20 +1538,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 63,
+      "completion_tokens": 64,
       "prompt_tokens": 238,
-      "total_tokens": 301,
+      "total_tokens": 302,
       "extra": {
-        "e2e_latency_s": 2.082,
-        "prefill_tokens_per_s": 389.5253682487725,
-        "decode_tokens_per_s": 43.15068493150341,
-        "time_to_first_token_s": 0.611,
-        "time_per_output_token_s": 0.02317460317460502,
-        "grammar_init_s": 0.067,
-        "grammar_per_token_s": 0.00011111111111249701
+        "e2e_latency_s": 2.037,
+        "prefill_tokens_per_s": 390.8045977011494,
+        "decode_tokens_per_s": 45.10218463706834,
+        "time_to_first_token_s": 0.609,
+        "time_per_output_token_s": 0.022171875000000008,
+        "grammar_init_s": 0.072,
+        "grammar_per_token_s": 0.00009375
       }
     },
-    "generated_output": "{\n  \"productName\": \"Cedar Classic Decking Board\",\n  \"dimensions\": \"2x6 inches, 12 feet in length\",\n  \"woodType\": \"Western Red Cedar\",\n  \"price\": 24.99\n}",
+    "generated_output": "{\n  \"productName\": \"Cedar Classic Decking Board\",\n  \"dimensions\": \"2 in x 6 in, 12 ft length\",\n  \"woodType\": \"Western Red Cedar\",\n  \"price\": 24.99\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'properties': {'productName': {'title': 'Product Name', 'type': 'string'}, 'dimensions': {'title': 'Dimensions', 'type': 'string'}, 'woodType': {'title': 'Wood Type', 'type': 'string'}, 'price': {'title': 'Price', 'type': 'number'}}, 'required': ['productName', 'dimensions', 'woodType', 'price'], 'title': 'TimberProductEntry', 'type': 'object'}\n</schema>\n",
@@ -1571,13 +1571,13 @@
       "prompt_tokens": 289,
       "total_tokens": 358,
       "extra": {
-        "e2e_latency_s": 2.32,
-        "prefill_tokens_per_s": 378.27225130890054,
-        "decode_tokens_per_s": 44.63130659767311,
-        "time_to_first_token_s": 0.764,
-        "time_per_output_token_s": 0.022405797101448424,
-        "grammar_init_s": 0.071,
-        "grammar_per_token_s": 0.00011594202898550725
+        "e2e_latency_s": 2.34,
+        "prefill_tokens_per_s": 380.2631578947368,
+        "decode_tokens_per_s": 43.865225683406706,
+        "time_to_first_token_s": 0.76,
+        "time_per_output_token_s": 0.022797101449275776,
+        "grammar_init_s": 0.077,
+        "grammar_per_token_s": 0.00004347826086956522
       }
     },
     "generated_output": "{\n  \"dockID\": \"DCK1023\",\n  \"vesselName\": \"Ocean Explorer\",\n  \"arrivalDate\": \"2023-04-15\",\n  \"departureDate\": \"2023-04-20\"\n}",
@@ -1600,13 +1600,13 @@
       "prompt_tokens": 332,
       "total_tokens": 402,
       "extra": {
-        "e2e_latency_s": 2.41,
+        "e2e_latency_s": 2.484,
         "prefill_tokens_per_s": 385.5981416957027,
-        "decode_tokens_per_s": 45.39559014267187,
+        "decode_tokens_per_s": 43.290043290042526,
         "time_to_first_token_s": 0.861,
-        "time_per_output_token_s": 0.022028571428571418,
-        "grammar_init_s": 0.077,
-        "grammar_per_token_s": 0.00015714285714368866
+        "time_per_output_token_s": 0.02310000000000041,
+        "grammar_init_s": 0.0810000000000291,
+        "grammar_per_token_s": 0.00007142857142857145
       }
     },
     "generated_output": "{\n  \"partID\": \"HP123\",\n  \"partName\": \"Hydraulic Pump\",\n  \"quantityAvailable\": 15,\n  \"compatibleMachinery\": [\n    \"Excavator Model X\",\n    \"Loader Model Y\"\n  ]\n}",
@@ -1629,13 +1629,13 @@
       "prompt_tokens": 266,
       "total_tokens": 318,
       "extra": {
-        "e2e_latency_s": 1.828,
-        "prefill_tokens_per_s": 390.02932551319645,
-        "decode_tokens_per_s": 45.53415061296204,
-        "time_to_first_token_s": 0.682,
-        "time_per_output_token_s": 0.021961538461537346,
-        "grammar_init_s": 0.074,
-        "grammar_per_token_s": 0.00009615384615272677
+        "e2e_latency_s": 1.834,
+        "prefill_tokens_per_s": 389.45827232796483,
+        "decode_tokens_per_s": 45.33565823888403,
+        "time_to_first_token_s": 0.683,
+        "time_per_output_token_s": 0.022057692307692316,
+        "grammar_init_s": 0.077,
+        "grammar_per_token_s": 0.0000769230769236366
       }
     },
     "generated_output": "{\n  \"airlineCode\": \"SKW\",\n  \"companyName\": \"Skyward Airlines\",\n  \"allianceMembership\": \"Global Sky Alliance\",\n  \"fleetSize\": 150\n}",
@@ -1658,13 +1658,13 @@
       "prompt_tokens": 261,
       "total_tokens": 314,
       "extra": {
-        "e2e_latency_s": 1.86,
-        "prefill_tokens_per_s": 382.69794721407624,
-        "decode_tokens_per_s": 45.376712328766,
-        "time_to_first_token_s": 0.682,
-        "time_per_output_token_s": 0.02203773584905715,
-        "grammar_init_s": 0.075,
-        "grammar_per_token_s": 0.00007547169811375667
+        "e2e_latency_s": 1.877,
+        "prefill_tokens_per_s": 378.26086956521743,
+        "decode_tokens_per_s": 45.02973661851942,
+        "time_to_first_token_s": 0.69,
+        "time_per_output_token_s": 0.02220754716981243,
+        "grammar_init_s": 0.082,
+        "grammar_per_token_s": 0.00007547169811320755
       }
     },
     "generated_output": "{\n  \"itemId\": \"LS-314159\",\n  \"itemName\": \"Taq Polymerase\",\n  \"quantity\": 40,\n  \"reorderLevel\": 10\n}",
@@ -1687,13 +1687,13 @@
       "prompt_tokens": 451,
       "total_tokens": 591,
       "extra": {
-        "e2e_latency_s": 4.277,
-        "prefill_tokens_per_s": 394.57567804024495,
-        "decode_tokens_per_s": 44.94382022471911,
-        "time_to_first_token_s": 1.143,
-        "time_per_output_token_s": 0.022249999999999995,
-        "grammar_init_s": 0.0940000000000291,
-        "grammar_per_token_s": 0.00007857142857205224
+        "e2e_latency_s": 4.368,
+        "prefill_tokens_per_s": 395.26730937772874,
+        "decode_tokens_per_s": 43.62729822374655,
+        "time_to_first_token_s": 1.141000000000029,
+        "time_per_output_token_s": 0.022921428571428135,
+        "grammar_init_s": 0.104,
+        "grammar_per_token_s": 0.00017857142857184442
       }
     },
     "generated_output": "{\n  \"distributorID\": \"DIST12345X\",\n  \"companyName\": \"Gadgets and Widgets Co.\",\n  \"contactInfo\": {\n    \"phone\": \"+1-555-0199\",\n    \"email\": \"contact@gadgets-widgets.com\",\n    \"address\": \"1234 Innovation Way, Tech City, 98765\"\n  },\n  \"productCategories\": [\n    \"Electronics\",\n    \"Home Appliances\",\n    \"Office Supplies\"\n  ]\n}",
@@ -1716,16 +1716,16 @@
       "prompt_tokens": 482,
       "total_tokens": 688,
       "extra": {
-        "e2e_latency_s": 5.848,
-        "prefill_tokens_per_s": 365.9832953682612,
-        "decode_tokens_per_s": 45.75744113727266,
-        "time_to_first_token_s": 1.317,
-        "time_per_output_token_s": 0.021854368932038674,
-        "grammar_init_s": 0.11,
-        "grammar_per_token_s": 0.0000533980582524272
+        "e2e_latency_s": 5.863,
+        "prefill_tokens_per_s": 392.1887713588376,
+        "decode_tokens_per_s": 44.78260869565247,
+        "time_to_first_token_s": 1.228999999999971,
+        "time_per_output_token_s": 0.022330097087378493,
+        "grammar_init_s": 0.1209999999999709,
+        "grammar_per_token_s": 0.000058252427184466034
       }
     },
-    "generated_output": "{\n  \"policyName\": \"SecureAccessPolicy\",\n  \"firewallRules\": [\n    {\n      \"ruleId\": \"FR-001\",\n      \"action\": \"Allow\",\n      \"protocol\": \"HTTP\",\n      \"portRange\": \"80\"\n    },\n    {\n      \"ruleId\": \"FR-0 upper range\",\n      \"action\": \"Deny\",\n      \"protocol\": \"FTP\",\n      \"portRange\": \"21\"\n    },\n    {\n      \"ruleId\": \"FR-003\",\n      \"action\": \"Limit\",\n      \"protocol\": \"SSH\",\n      \"portRange\": \"22\"\n    }\n  ],\n  \"vpnRequirements\": {\n    \"vpnType\": \"L2TP\",\n    \"encryptionStandards\": \"AES-256\"\n  }\n}",
+    "generated_output": "{\n  \"policyName\": \"SecureAccessPolicy\",\n  \"firewallRules\": [\n    {\n      \"ruleId\": \"FR-001\",\n      \"action\": \"Allow\",\n      \"protocol\": \"HTTP\",\n      \"portRange\": \"80\"\n    },\n    {\n      \"ruleId\": \"FR-0zechand\",\n      \"action\": \"Deny\",\n      \"protocol\": \"FTP\",\n      \"portRange\": \"21\"\n    },\n    {\n      \"ruleId\": \"FR-003\",\n      \"action\": \"Limit\",\n      \"protocol\": \"SSH\",\n      \"portRange\": \"22\"\n    }\n  ],\n  \"vpnRequirements\": {\n    \"vpnType\": \"L2TP\",\n    \"encryptionStandards\": \"AES-256\"\n  }\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'NetworkSecurityPolicy', 'type': 'object', 'properties': {'policyName': {'title': 'Policy Name', 'type': 'string'}, 'firewallRules': {'title': 'Firewall Rules', 'type': 'array', 'items': {'type': 'object', 'properties': {'ruleId': {'title': 'Rule ID', 'type': 'string'}, 'action': {'title': 'Action', 'type': 'string', 'enum': ['Allow', 'Deny', 'Limit']}, 'protocol': {'title': 'Protocol', 'type': 'string'}, 'portRange': {'title': 'Port Range', 'type': 'string'}}, 'required': ['ruleId', 'action', 'protocol', 'portRange']}}, 'vpnRequirements': {'title': 'VPN Requirements', 'type': 'object', 'properties': {'vpnType': {'title': 'VPN Type', 'type': 'string'}, 'encryptionStandards': {'title': 'Encryption Standards', 'type': 'string'}}, 'required': ['vpnType', 'encryptionStandards']}}, 'required': ['policyName', 'firewallRules', 'vpnRequirements']}\n</schema>\n",
@@ -1745,13 +1745,13 @@
       "prompt_tokens": 343,
       "total_tokens": 438,
       "extra": {
-        "e2e_latency_s": 3.06,
-        "prefill_tokens_per_s": 355.07246376811594,
-        "decode_tokens_per_s": 45.65112926477527,
-        "time_to_first_token_s": 0.966,
-        "time_per_output_token_s": 0.021905263157895347,
-        "grammar_init_s": 0.085,
-        "grammar_per_token_s": 0.00006315789473714847
+        "e2e_latency_s": 3.036,
+        "prefill_tokens_per_s": 395.1612903225939,
+        "decode_tokens_per_s": 44.20660772452126,
+        "time_to_first_token_s": 0.8679999999999709,
+        "time_per_output_token_s": 0.022621052631579854,
+        "grammar_init_s": 0.0939999999999709,
+        "grammar_per_token_s": 0.0000947368421049568
       }
     },
     "generated_output": "{\n  \"batchID\": \"MT-2023-04-05\",\n  \"productionDate\": \"2023-04-05\",\n  \"yieldRate\": 92.5,\n  \"defects\": [\n    \"Gate oxide integrity\",\n    \"Photolithography misalignment\",\n    \"Doping variability\"\n  ]\n}",
@@ -1774,13 +1774,13 @@
       "prompt_tokens": 361,
       "total_tokens": 475,
       "extra": {
-        "e2e_latency_s": 3.619,
-        "prefill_tokens_per_s": 335.8139534883721,
-        "decode_tokens_per_s": 45.07710557532783,
-        "time_to_first_token_s": 1.075,
-        "time_per_output_token_s": 0.022184210526314998,
-        "grammar_init_s": 0.094,
-        "grammar_per_token_s": 0.00011403508771878767
+        "e2e_latency_s": 3.488,
+        "prefill_tokens_per_s": 389.8488120950324,
+        "decode_tokens_per_s": 44.776119402985614,
+        "time_to_first_token_s": 0.926,
+        "time_per_output_token_s": 0.022333333333333063,
+        "grammar_init_s": 0.1,
+        "grammar_per_token_s": 0.00003508771929850091
       }
     },
     "generated_output": "{\n  \"componentID\": \"RES-0001\",\n  \"componentName\": \"220 Ohm Resistor\",\n  \"specifications\": {\n    \"size\": \"3.2mm x 1.6mm\",\n    \"weight\": \"0.2g\",\n    \"powerRequirements\": \"1/4W\"\n  },\n  \"OEMCompatibility\": [\n    \"Samsung\",\n    \"Sony\",\n    \"LG\"\n  ]\n}",
@@ -1799,20 +1799,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 88,
+      "completion_tokens": 86,
       "prompt_tokens": 363,
-      "total_tokens": 451,
+      "total_tokens": 449,
       "extra": {
-        "e2e_latency_s": 2.939,
-        "prefill_tokens_per_s": 349.03846153846155,
-        "decode_tokens_per_s": 46.659597030754384,
-        "time_to_first_token_s": 1.04,
-        "time_per_output_token_s": 0.021431818181817507,
-        "grammar_init_s": 0.081,
-        "grammar_per_token_s": 0.00007954545454512383
+        "e2e_latency_s": 2.871,
+        "prefill_tokens_per_s": 392.00863930885527,
+        "decode_tokens_per_s": 44.55958549222532,
+        "time_to_first_token_s": 0.926,
+        "time_per_output_token_s": 0.022441860465117622,
+        "grammar_init_s": 0.083,
+        "grammar_per_token_s": 0.000011627906976744187
       }
     },
-    "generated_output": "{\n  \"licenseKey\": \"VS-ENT-987654321\",\n  \"softwareName\": \"Visual Studio Enterprise\",\n  \"licenseType\": \"Commercial\",\n  \"issueDate\": \"2023-04-01\",\n  \"expirationDate\": \"2ized for April 1, 2024\"\n}",
+    "generated_output": "{\n  \"licenseKey\": \"VS-ENT-987654321\",\n  \"softwareName\": \"Visual Studio Enterprise\",\n  \"licenseType\": \"Commercial\",\n  \"issueDate\": \"2023-04-01\",\n  \"expirationDate\": \"2024-04-01\"\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'SoftwareLicensingRecord', 'type': 'object', 'properties': {'licenseKey': {'title': 'License Key', 'type': 'string'}, 'softwareName': {'title': 'Software Name', 'type': 'string'}, 'licenseType': {'title': 'License Type', 'type': 'string'}, 'issueDate': {'title': 'Issue Date', 'type': 'string', 'format': 'date'}, 'expirationDate': {'title': 'Expiration Date', 'type': 'string', 'format': 'date'}}, 'required': ['licenseKey', 'softwareName', 'licenseType', 'issueDate', 'expirationDate']}\n</schema>\n",
@@ -1832,13 +1832,13 @@
       "prompt_tokens": 360,
       "total_tokens": 479,
       "extra": {
-        "e2e_latency_s": 3.775,
-        "prefill_tokens_per_s": 344.8275862068965,
-        "decode_tokens_per_s": 44.008875739645966,
-        "time_to_first_token_s": 1.044,
-        "time_per_output_token_s": 0.02272268907562974,
-        "grammar_init_s": 0.081,
-        "grammar_per_token_s": 0.00005882352941200928
+        "e2e_latency_s": 3.634,
+        "prefill_tokens_per_s": 390.45553145336225,
+        "decode_tokens_per_s": 44.18863720757526,
+        "time_to_first_token_s": 0.922,
+        "time_per_output_token_s": 0.0226302521008403,
+        "grammar_init_s": 0.085,
+        "grammar_per_token_s": 0.00008403361344464445
       }
     },
     "generated_output": "{\n  \"feedbackID\": \"FDBK-987654\",\n  \"customerID\": \"76234987\",\n  \"productID\": \"SPWR-220\",\n  \"rating\": 4,\n  \"comments\": \"The solar panels are highly efficient and have significantly reduced my electricity bills. However, the installation process was cumbersome and took two days longer than the scheduled time. The installation team was professional, but I believe the process could be more streamlined.\"\n}",
@@ -1861,13 +1861,13 @@
       "prompt_tokens": 280,
       "total_tokens": 355,
       "extra": {
-        "e2e_latency_s": 2.492,
-        "prefill_tokens_per_s": 357.1428571428571,
-        "decode_tokens_per_s": 44.19563936358129,
-        "time_to_first_token_s": 0.784,
-        "time_per_output_token_s": 0.022626666666667433,
-        "grammar_init_s": 0.073,
-        "grammar_per_token_s": 0.00006666666666627862
+        "e2e_latency_s": 2.397,
+        "prefill_tokens_per_s": 406.3860667634253,
+        "decode_tokens_per_s": 44.169611307419,
+        "time_to_first_token_s": 0.689,
+        "time_per_output_token_s": 0.02264000000000077,
+        "grammar_init_s": 0.077,
+        "grammar_per_token_s": 0.00003999999999961195
       }
     },
     "generated_output": "{\n  \"logID\": \"FL123456\",\n  \"vehicleID\": \"VH78910\",\n  \"fuelType\": \"diesel\",\n  \"quantity\": 150,\n  \"fillDate\": \"2023-04-05\"\n}",
@@ -1890,13 +1890,13 @@
       "prompt_tokens": 269,
       "total_tokens": 338,
       "extra": {
-        "e2e_latency_s": 2.343,
-        "prefill_tokens_per_s": 350.26041666667993,
-        "decode_tokens_per_s": 44.03318442884494,
-        "time_to_first_token_s": 0.7679999999999709,
-        "time_per_output_token_s": 0.022710144927536223,
-        "grammar_init_s": 0.071,
-        "grammar_per_token_s": 0.00004347826086956522
+        "e2e_latency_s": 2.241,
+        "prefill_tokens_per_s": 392.700729927024,
+        "decode_tokens_per_s": 44.430135222150696,
+        "time_to_first_token_s": 0.6849999999999709,
+        "time_per_output_token_s": 0.022507246376811584,
+        "grammar_init_s": 0.0749999999999709,
+        "grammar_per_token_s": 0.00010144927536231884
       }
     },
     "generated_output": "{\n  \"equipmentID\": \"OTD-9812\",\n  \"type\": \"Offshore Drill Rig\",\n  \"manufacturer\": \"OceanTech Drilling Inc.\",\n  \"dateAcquired\": \"2023-04-15\"\n}",
@@ -1919,13 +1919,13 @@
       "prompt_tokens": 427,
       "total_tokens": 544,
       "extra": {
-        "e2e_latency_s": 3.808,
-        "prefill_tokens_per_s": 351.44032921810697,
-        "decode_tokens_per_s": 45.43689320388252,
-        "time_to_first_token_s": 1.215,
-        "time_per_output_token_s": 0.022008547008547482,
-        "grammar_init_s": 0.088,
-        "grammar_per_token_s": 0.00008547008547033421
+        "e2e_latency_s": 3.727,
+        "prefill_tokens_per_s": 397.2093023255814,
+        "decode_tokens_per_s": 44.368600682594376,
+        "time_to_first_token_s": 1.075,
+        "time_per_output_token_s": 0.02253846153846127,
+        "grammar_init_s": 0.096,
+        "grammar_per_token_s": 0.00013675213675238556
       }
     },
     "generated_output": "{\n  \"componentID\": \"ELEC12345X\",\n  \"componentName\": \"ACME Power Transformer\",\n  \"specs\": {\n    \"dimension\": \"250x400x200 mm\",\n    \"weight\": 3500\n  },\n  \"supplier\": {\n    \"name\": \"ACME Electricals Inc.\",\n    \"contact\": \"+1-202-555-0173\"\n  }\n}",
@@ -1948,16 +1948,16 @@
       "prompt_tokens": 266,
       "total_tokens": 361,
       "extra": {
-        "e2e_latency_s": 2.897,
-        "prefill_tokens_per_s": 344.559585492215,
-        "decode_tokens_per_s": 44.89603024574671,
-        "time_to_first_token_s": 0.7720000000000291,
-        "time_per_output_token_s": 0.022273684210526307,
-        "grammar_init_s": 0.078,
-        "grammar_per_token_s": 0.00004210526315728202
+        "e2e_latency_s": 2.867,
+        "prefill_tokens_per_s": 386.066763425254,
+        "decode_tokens_per_s": 43.839409321642286,
+        "time_to_first_token_s": 0.689,
+        "time_per_output_token_s": 0.022810526315789753,
+        "grammar_init_s": 0.085,
+        "grammar_per_token_s": 0.0001157894736839042
       }
     },
-    "generated_output": "{\n  \"conditionName\": \"Chronic Obstructive Pulmonary Disease (COPD)\",\n  \"diagnosisDate\": \"2021-03-05\",\n  \"treatment\": \"Bronchodilators and corticosteroids\",\n  \"icdCodes\": [\n    \"J44.9\",\n    \"J44.0\"\n  ]\n}",
+    "generated_output": "{\n  \"conditionName\": \"Chronic Obstructive Pulmonary Disease\",\n  \"diagnosisDate\": \"2021-03-05\",\n  \"treatment\": \"combination of bronchodilators and corticosteroids\",\n  \"icdCodes\": [\n    \"J44.9\",\n    \"J44.0\"\n  ]\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'type': 'object', 'properties': {'conditionName': {'type': 'string'}, 'diagnosisDate': {'type': 'string', 'format': 'date'}, 'treatment': {'type': 'string'}, 'icdCodes': {'type': 'array', 'items': {'type': 'string'}}}, 'required': ['conditionName', 'diagnosisDate', 'treatment', 'icdCodes']}\n</schema>\n",
@@ -1977,13 +1977,13 @@
       "prompt_tokens": 221,
       "total_tokens": 259,
       "extra": {
-        "e2e_latency_s": 1.426,
-        "prefill_tokens_per_s": 361.70212765959167,
-        "decode_tokens_per_s": 46.97156983930776,
-        "time_to_first_token_s": 0.6109999999999709,
-        "time_per_output_token_s": 0.02128947368421054,
-        "grammar_init_s": 0.066,
-        "grammar_per_token_s": 0.000052631578947368424
+        "e2e_latency_s": 1.374,
+        "prefill_tokens_per_s": 403.2846715328467,
+        "decode_tokens_per_s": 46.285018270403576,
+        "time_to_first_token_s": 0.548,
+        "time_per_output_token_s": 0.02160526315789398,
+        "grammar_init_s": 0.07,
+        "grammar_per_token_s": 0.00015789473684210527
       }
     },
     "generated_output": "{\n  \"baseCurrency\": \"JPY\",\n  \"targetCurrency\": \"AUD\",\n  \"exchangeRate\": 0.0123\n}",
@@ -2006,13 +2006,13 @@
       "prompt_tokens": 264,
       "total_tokens": 315,
       "extra": {
-        "e2e_latency_s": 1.867,
-        "prefill_tokens_per_s": 360.1637107776262,
-        "decode_tokens_per_s": 45.17271922055148,
-        "time_to_first_token_s": 0.733,
-        "time_per_output_token_s": 0.022137254901959648,
-        "grammar_init_s": 0.069,
-        "grammar_per_token_s": 0.000019607843137825566
+        "e2e_latency_s": 1.803,
+        "prefill_tokens_per_s": 386.5300146412884,
+        "decode_tokens_per_s": 45.61717352414906,
+        "time_to_first_token_s": 0.683,
+        "time_per_output_token_s": 0.021921568627451562,
+        "grammar_init_s": 0.074,
+        "grammar_per_token_s": 0.00007843137254959027
       }
     },
     "generated_output": "{\n  \"lesseeName\": \"Harper & Associates\",\n  \"assetType\": \"Office Computers\",\n  \"leaseTerm\": 24,\n  \"monthlyPayment\": 1200\n}",
@@ -2035,13 +2035,13 @@
       "prompt_tokens": 440,
       "total_tokens": 602,
       "extra": {
-        "e2e_latency_s": 4.787,
-        "prefill_tokens_per_s": 375.4266211604096,
-        "decode_tokens_per_s": 45.07512520868151,
-        "time_to_first_token_s": 1.172,
-        "time_per_output_token_s": 0.022185185185185,
-        "grammar_init_s": 0.097,
-        "grammar_per_token_s": 0.00004938271605010133
+        "e2e_latency_s": 4.725,
+        "prefill_tokens_per_s": 411.21495327101684,
+        "decode_tokens_per_s": 44.70198675496727,
+        "time_to_first_token_s": 1.0700000000000292,
+        "time_per_output_token_s": 0.02237037037037018,
+        "grammar_init_s": 0.102,
+        "grammar_per_token_s": 0.00008641975308659943
       }
     },
     "generated_output": "{\n  \"inventoryID\": \"HC123456\",\n  \"products\": [\n    {\n      \"productID\": \"MED12345\",\n      \"quantity\": 100\n    },\n    {\n      \"productID\": \"MED12346\",\n      \"quantity\": 200\n    },\n    {\n      \"productID\": \"MED12347\",\n      \"quantity\": 150\n    }\n  ],\n  \"totalValue\": 250000.0,\n  \"lastUpdated\": \"2023-04-05T10:00:00Z\"\n}",
@@ -2060,20 +2060,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 65,
+      "completion_tokens": 67,
       "prompt_tokens": 291,
-      "total_tokens": 356,
+      "total_tokens": 358,
       "extra": {
-        "e2e_latency_s": 2.35,
-        "prefill_tokens_per_s": 335.2534562211982,
-        "decode_tokens_per_s": 43.91891891891806,
-        "time_to_first_token_s": 0.868,
-        "time_per_output_token_s": 0.02276923076923121,
-        "grammar_init_s": 0.07,
-        "grammar_per_token_s": 0.000046153846154293907
+        "e2e_latency_s": 2.294,
+        "prefill_tokens_per_s": 382.89473684210526,
+        "decode_tokens_per_s": 43.790849673200945,
+        "time_to_first_token_s": 0.76,
+        "time_per_output_token_s": 0.02283582089552326,
+        "grammar_init_s": 0.072,
+        "grammar_per_token_s": 0.00004477611940255069
       }
     },
-    "generated_output": "{\n  \"projectId\": \"HYRES-2023\",\n  \"projectName\": \"Hybrid Renewable Energy Synthesis\",\n  \"budget\": 4500000,\n  \"projectLead\": \"Dr. Emily Stanton\"\n}",
+    "generated_output": "{\n  \"projectId\": \"HYRES-2023\",\n  \"projectName\": \"Hybrid Renewable Energy Synthesis\",\n  \"budget\": 4500000.0,\n  \"projectLead\": \"Dr. Emily Stanton\"\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'RDProjectDetails', 'type': 'object', 'properties': {'projectId': {'title': 'Project ID', 'type': 'string'}, 'projectName': {'title': 'Project Name', 'type': 'string'}, 'budget': {'title': 'Budget', 'type': 'number'}, 'projectLead': {'title': 'Project Lead', 'type': 'string'}}, 'required': ['projectId', 'projectName', 'budget', 'projectLead']}\n</schema>\n",
@@ -2089,20 +2089,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 243,
+      "completion_tokens": 511,
       "prompt_tokens": 345,
-      "total_tokens": 588,
+      "total_tokens": 856,
       "extra": {
-        "e2e_latency_s": 6.542,
-        "prefill_tokens_per_s": 393.38654503990875,
-        "decode_tokens_per_s": 43.26152750578652,
-        "time_to_first_token_s": 0.877,
-        "time_per_output_token_s": 0.023115226337448287,
-        "grammar_init_s": 0.049,
-        "grammar_per_token_s": 0.00012757201646126473
+        "e2e_latency_s": 12.766,
+        "prefill_tokens_per_s": 398.84393063583815,
+        "decode_tokens_per_s": 43.44499234824044,
+        "time_to_first_token_s": 0.865,
+        "time_per_output_token_s": 0.023017612524461654,
+        "grammar_init_s": 0.052,
+        "grammar_per_token_s": 0.00007827788649677984
       }
     },
-    "generated_output": "{\".info\": \"As an AI language model, I am unable to fetch real-time data. However, I'm providing a formatted response in line with your JSON schema requirements based on the hypothetical information you've provided.\",\".info\": {\"current_location\": \"Boulder, Colorado\",\"preferred_units\": \"Fahrenheit\",\"weather_forecast\": {\"Friday\": {\"description\": \"Sunny\",\": {\": \"high_temperature_fahrenheit\",\": 75,\": \"low_temperature_fahrenheit\",\": 50}, \": \"recommended_activities\"}},\": {\": \"hiking_and_outdoor_activities\",\": [\": \"hiking\",\"]}, \": {\"Saturday\": {\"description\": \"Partly cloudy\",\": \": \"high_temperature_fahrenheit\",\": 70,\": \"low_temperature_fahrenheit\",\": 48}, \": \"recommended_activities\"}},\": [\": \"short_hikes\",\": \": \"local_parks\"}}",
+    "generated_output": "{\".@marks(**/ **/ **/ **/ **/ **/ Here is your requested JSON-formatted forecast in the specified format:**/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/ **/",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'WeatherUpdates': {'type': 'object', 'properties': {'current_location': {'type': 'string'}, 'preferred_units': {'type': 'string'}, 'weather_forecast': {'type': 'string'}, 'recommended_activities': {'type': 'array', 'items': {'type': 'string'}}}, 'required': ['current_location', 'preferred_units', 'weather_forecast', 'recommended_activities']}}\n</schema>\n",
@@ -2122,13 +2122,13 @@
       "prompt_tokens": 364,
       "total_tokens": 430,
       "extra": {
-        "e2e_latency_s": 2.518,
-        "prefill_tokens_per_s": 344.37086092715236,
-        "decode_tokens_per_s": 45.32967032967125,
-        "time_to_first_token_s": 1.057,
-        "time_per_output_token_s": 0.022060606060605614,
-        "grammar_init_s": 0.099,
-        "grammar_per_token_s": 0.000060606060606060605
+        "e2e_latency_s": 2.438,
+        "prefill_tokens_per_s": 393.5135135135135,
+        "decode_tokens_per_s": 43.88297872340341,
+        "time_to_first_token_s": 0.925,
+        "time_per_output_token_s": 0.022787878787879225,
+        "grammar_init_s": 0.107,
+        "grammar_per_token_s": 0.00010606060605928315
       }
     },
     "generated_output": "{\n  \"pipelineID\": \"PL-4583\",\n  \"inspectionDate\": \"2023-04-15\",\n  \"defectType\": \"Corrosion\",\n  \"repairStatus\": \"Defect Found - Repair Scheduled\"\n}",
@@ -2151,13 +2151,13 @@
       "prompt_tokens": 341,
       "total_tokens": 415,
       "extra": {
-        "e2e_latency_s": 2.549,
-        "prefill_tokens_per_s": 381.00558659216637,
-        "decode_tokens_per_s": 45.01216545012326,
-        "time_to_first_token_s": 0.8950000000000291,
-        "time_per_output_token_s": 0.022216216216215424,
-        "grammar_init_s": 0.101,
-        "grammar_per_token_s": 0.00006756756756756758
+        "e2e_latency_s": 2.478,
+        "prefill_tokens_per_s": 393.76443418013855,
+        "decode_tokens_per_s": 46.27892432770567,
+        "time_to_first_token_s": 0.866,
+        "time_per_output_token_s": 0.02160810810810771,
+        "grammar_init_s": 0.1120000000000291,
+        "grammar_per_token_s": 0.00012162162162162164
       }
     },
     "generated_output": "{\n  \"driverName\": \"Emily Thompson\",\n  \"vehicleMake\": \"Ford\",\n  \"vehicleModel\": \"Focus SE Hatch\",\n  \"yearOfManufacture\": 2019,\n  \"drivingHistory\": {\n    \"incidents\": []\n  }\n}",
@@ -2176,20 +2176,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 121,
+      "completion_tokens": 119,
       "prompt_tokens": 388,
-      "total_tokens": 509,
+      "total_tokens": 507,
       "extra": {
-        "e2e_latency_s": 3.765,
-        "prefill_tokens_per_s": 370.58261700096546,
-        "decode_tokens_per_s": 44.798222880415636,
-        "time_to_first_token_s": 1.0469999999999708,
-        "time_per_output_token_s": 0.02232231404958629,
-        "grammar_init_s": 0.0899999999999709,
-        "grammar_per_token_s": 0.00009090909090836931
+        "e2e_latency_s": 3.735,
+        "prefill_tokens_per_s": 390.7351460221551,
+        "decode_tokens_per_s": 43.6697247706427,
+        "time_to_first_token_s": 0.993,
+        "time_per_output_token_s": 0.022899159663865284,
+        "grammar_init_s": 0.096,
+        "grammar_per_token_s": 0.00011764705882377401
       }
     },
-    "generated_output": "{\n  \"proposalID\": \"BP-78934\",\n  \"projectID\": \"PJ-4321\",\n  \"submitterDetails\": {\n    \"name\": \"Ava Smith\",\n    \"company\": \"Smith Construction Co.\",\n    \"contactInfo\": \"ava.smith@smithconstructions.com\"\n  },\n  \"proposedCost\": 4500000.0,\n  \"timeline\": \"24 months from the start date\"\n}",
+    "generated_output": "{\n  \"proposalID\": \"BP-78934\",\n  \"projectID\": \"PJ-4321\",\n  \"submitterDetails\": {\n    \"name\": \"Ava Smith\",\n    \"company\": \"Smith Construction Co.\",\n    \"contactInfo\": \"ava.smith@smithconstructions.com\"\n  },\n  \"proposedCost\": 4500000,\n  \"timeline\": \"24 months from the start date\"\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'ConstructionBidProposals', 'type': 'object', 'properties': {'proposalID': {'title': 'Proposal ID', 'type': 'string'}, 'projectID': {'title': 'Project ID', 'type': 'string'}, 'submitterDetails': {'type': 'object', 'properties': {'name': {'title': 'Name', 'type': 'string'}, 'company': {'title': 'Company', 'type': 'string'}, 'contactInfo': {'title': 'Contact Info', 'type': 'string'}}, 'required': ['name', 'company', 'contactInfo']}, 'proposedCost': {'title': 'Proposed Cost', 'type': 'number'}, 'timeline': {'title': 'Timeline', 'type': 'string'}}, 'required': ['proposalID', 'projectID', 'submitterDetails', 'proposedCost', 'timeline']}\n</schema>\n",
@@ -2209,13 +2209,13 @@
       "prompt_tokens": 190,
       "total_tokens": 221,
       "extra": {
-        "e2e_latency_s": 1.186,
-        "prefill_tokens_per_s": 356.4727954971857,
-        "decode_tokens_per_s": 47.61904761904548,
-        "time_to_first_token_s": 0.533,
-        "time_per_output_token_s": 0.02100000000000094,
-        "grammar_init_s": 0.066,
-        "grammar_per_token_s": 0.00012903225806357732
+        "e2e_latency_s": 1.151,
+        "prefill_tokens_per_s": 388.5480572596906,
+        "decode_tokens_per_s": 47.184170471843785,
+        "time_to_first_token_s": 0.4890000000000291,
+        "time_per_output_token_s": 0.02119354838709584,
+        "grammar_init_s": 0.072,
+        "grammar_per_token_s": 0
       }
     },
     "generated_output": "{\n  \"firstName\": \"Alice\",\n  \"lastName\": \"Johnson\",\n  \"age\": 35\n}",
@@ -2238,13 +2238,13 @@
       "prompt_tokens": 286,
       "total_tokens": 336,
       "extra": {
-        "e2e_latency_s": 1.844,
-        "prefill_tokens_per_s": 377.80713342138574,
-        "decode_tokens_per_s": 46.33920296570897,
-        "time_to_first_token_s": 0.7570000000000291,
-        "time_per_output_token_s": 0.02158000000000001,
-        "grammar_init_s": 0.072,
-        "grammar_per_token_s": 0.00005999999999941792
+        "e2e_latency_s": 1.815,
+        "prefill_tokens_per_s": 414.49275362318843,
+        "decode_tokens_per_s": 44.5632798573975,
+        "time_to_first_token_s": 0.69,
+        "time_per_output_token_s": 0.02244,
+        "grammar_init_s": 0.074,
+        "grammar_per_token_s": 0.00006
       }
     },
     "generated_output": "{\n  \"itemID\": \"PEN123\",\n  \"itemName\": \"Blue Ballpoint Pen\",\n  \"quantityAvailable\": 150,\n  \"reorderThreshold\": 50\n}",
@@ -2263,20 +2263,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 102,
+      "completion_tokens": 100,
       "prompt_tokens": 299,
-      "total_tokens": 401,
+      "total_tokens": 399,
       "extra": {
-        "e2e_latency_s": 3.138,
-        "prefill_tokens_per_s": 368.22660098520845,
-        "decode_tokens_per_s": 44.11764705882301,
-        "time_to_first_token_s": 0.8120000000000291,
-        "time_per_output_token_s": 0.022666666666666935,
-        "grammar_init_s": 0.073,
-        "grammar_per_token_s": 0.00009803921568713052
+        "e2e_latency_s": 3.039,
+        "prefill_tokens_per_s": 392.3884514435695,
+        "decode_tokens_per_s": 44.26737494466525,
+        "time_to_first_token_s": 0.762,
+        "time_per_output_token_s": 0.02259000000000027,
+        "grammar_init_s": 0.077,
+        "grammar_per_token_s": 0.000060000000001746245
       }
     },
-    "generated_output": "{\n  \"systemID\": \"DDS1001\",\n  \"systemType\": \"Automated Insulin Pump\",\n  \"medicationIncluded\": \"Insulin Glargine\",\n  \"usageInstructions\": \"Attach the pump to the body and set the basal rate according to the doctor's prescription. Check the pump every 48 hours and change the infusion site every 3 days.\"\n}",
+    "generated_output": "{\n  \"systemID\": \"DDS1001\",\n  \"systemType\": \"Automated Insulin Pump\",\n  \"medicationIncluded\": \"Insulin Glargine\",\n  \"usageInstructions\": \"Attach pump to the body and set the basal rate according to the doctor's prescription. Check pump every 48 hours and change the infusion site every 3 days.\"\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'DrugDeliverySystem', 'type': 'object', 'properties': {'systemID': {'title': 'System ID', 'type': 'string'}, 'systemType': {'title': 'System Type', 'type': 'string'}, 'medicationIncluded': {'title': 'Medication Included', 'type': 'string'}, 'usageInstructions': {'title': 'Usage Instructions', 'type': 'string'}}, 'required': ['systemID', 'systemType', 'medicationIncluded', 'usageInstructions']}\n</schema>\n",
@@ -2292,20 +2292,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 50,
+      "completion_tokens": 48,
       "prompt_tokens": 237,
-      "total_tokens": 287,
+      "total_tokens": 285,
       "extra": {
-        "e2e_latency_s": 1.761,
-        "prefill_tokens_per_s": 345.98540145985396,
-        "decode_tokens_per_s": 46.641791044778635,
-        "time_to_first_token_s": 0.685,
-        "time_per_output_token_s": 0.021439999999998842,
-        "grammar_init_s": 0.0730000000000291,
-        "grammar_per_token_s": 0.00002
+        "e2e_latency_s": 1.656,
+        "prefill_tokens_per_s": 384.7402597402234,
+        "decode_tokens_per_s": 46.46660212971925,
+        "time_to_first_token_s": 0.6160000000000582,
+        "time_per_output_token_s": 0.02152083333333334,
+        "grammar_init_s": 0.0780000000000291,
+        "grammar_per_token_s": 0.000020833333333939666
       }
     },
-    "generated_output": "{\n  \"productName\": \"Glen Oak\",\n  \"productType\": \"whiskey\",\n  \"alcoholContent\": 40.0,\n  \"stockQuantity\": 150\n}",
+    "generated_output": "{\n  \"productName\": \"Glen Oak\",\n  \"productType\": \"whiskey\",\n  \"alcoholContent\": 40,\n  \"stockQuantity\": 150\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'properties': {'productName': {'title': 'Product Name', 'type': 'string'}, 'productType': {'title': 'Product Type', 'type': 'string'}, 'alcoholContent': {'title': 'Alcohol Content', 'type': 'number'}, 'stockQuantity': {'title': 'Stock Quantity', 'type': 'integer'}}, 'required': ['productName', 'productType', 'alcoholContent', 'stockQuantity'], 'title': 'ProductInventoryQuery', 'type': 'object'}\n</schema>\n",
@@ -2325,13 +2325,13 @@
       "prompt_tokens": 391,
       "total_tokens": 480,
       "extra": {
-        "e2e_latency_s": 3.099,
-        "prefill_tokens_per_s": 362.708719851577,
-        "decode_tokens_per_s": 44.477761119439016,
-        "time_to_first_token_s": 1.078,
-        "time_per_output_token_s": 0.022483146067416367,
-        "grammar_init_s": 0.076,
-        "grammar_per_token_s": 0.000044943820224719104
+        "e2e_latency_s": 3.014,
+        "prefill_tokens_per_s": 395.34883720927905,
+        "decode_tokens_per_s": 44.103072348862185,
+        "time_to_first_token_s": 0.9890000000000582,
+        "time_per_output_token_s": 0.022674157303369795,
+        "grammar_init_s": 0.0810000000000291,
+        "grammar_per_token_s": 0.00006741573033642464
       }
     },
     "generated_output": "{\n  \"claimID\": \"WC-456789\",\n  \"equipmentID\": \"SG-1234X\",\n  \"claimDate\": \"2023-04-05\",\n  \"issueDescription\": \"Generator shuts down unexpectedly after about an hour of operation\",\n  \"claimStatus\": \"Submitted\"\n}",
@@ -2354,13 +2354,13 @@
       "prompt_tokens": 258,
       "total_tokens": 324,
       "extra": {
-        "e2e_latency_s": 2.248,
-        "prefill_tokens_per_s": 323.71392722710164,
-        "decode_tokens_per_s": 45.769764216368,
-        "time_to_first_token_s": 0.797,
-        "time_per_output_token_s": 0.021848484848483965,
-        "grammar_init_s": 0.079,
-        "grammar_per_token_s": 0.000030303030302589337
+        "e2e_latency_s": 2.163,
+        "prefill_tokens_per_s": 377.1929824561243,
+        "decode_tokens_per_s": 44.897959183673485,
+        "time_to_first_token_s": 0.6840000000000291,
+        "time_per_output_token_s": 0.022272727272727267,
+        "grammar_init_s": 0.0810000000000291,
+        "grammar_per_token_s": 0.00010606060606060606
       }
     },
     "generated_output": "{\n  \"facilityId\": \"BLD-4021\",\n  \"requestedServices\": [\n    \"HVAC system repair\",\n    \"Elevator maintenance\",\n    \"Plumbing inspection\"\n  ],\n  \"urgencyLevel\": \"high\"\n}",
@@ -2383,13 +2383,13 @@
       "prompt_tokens": 341,
       "total_tokens": 429,
       "extra": {
-        "e2e_latency_s": 2.822,
-        "prefill_tokens_per_s": 379.7327394209354,
-        "decode_tokens_per_s": 46.0732984293187,
-        "time_to_first_token_s": 0.898,
-        "time_per_output_token_s": 0.02170454545454577,
-        "grammar_init_s": 0.084,
-        "grammar_per_token_s": 0.00007954545454578527
+        "e2e_latency_s": 2.866,
+        "prefill_tokens_per_s": 394.21965317919074,
+        "decode_tokens_per_s": 44.24333836098673,
+        "time_to_first_token_s": 0.865,
+        "time_per_output_token_s": 0.022602272727272055,
+        "grammar_init_s": 0.088,
+        "grammar_per_token_s": 0.00007954545454545455
       }
     },
     "generated_output": "{\n  \"networkName\": \"NBC\",\n  \"showId\": \"SVU-2401\",\n  \"viewerCount\": 43000000,\n  \"demographicData\": {\n    \"ageRange\": \"18-49\",\n    \"genderRatio\": \"60% female to 40% male\"\n  }\n}",
@@ -2412,13 +2412,13 @@
       "prompt_tokens": 255,
       "total_tokens": 316,
       "extra": {
-        "e2e_latency_s": 2.009,
-        "prefill_tokens_per_s": 370.1015965166909,
-        "decode_tokens_per_s": 46.49390243902233,
-        "time_to_first_token_s": 0.689,
-        "time_per_output_token_s": 0.02150819672131243,
-        "grammar_init_s": 0.072,
-        "grammar_per_token_s": 0.00006557377049132618
+        "e2e_latency_s": 1.962,
+        "prefill_tokens_per_s": 413.9610389610781,
+        "decode_tokens_per_s": 45.59043348281214,
+        "time_to_first_token_s": 0.6159999999999418,
+        "time_per_output_token_s": 0.021934426229507246,
+        "grammar_init_s": 0.0759999999999418,
+        "grammar_per_token_s": 0.00006557377049180328
       }
     },
     "generated_output": "{\n  \"sku\": \"ABC123\",\n  \"productName\": \"UltraBoost Running Shoes\",\n  \"newStockLevel\": 25,\n  \"restockDate\": \"2023-04-15\"\n}",
@@ -2441,13 +2441,13 @@
       "prompt_tokens": 365,
       "total_tokens": 467,
       "extra": {
-        "e2e_latency_s": 3.282,
-        "prefill_tokens_per_s": 375.5144032921811,
-        "decode_tokens_per_s": 44.58041958041733,
-        "time_to_first_token_s": 0.972,
-        "time_per_output_token_s": 0.022431372549020744,
-        "grammar_init_s": 0.09,
-        "grammar_per_token_s": 0.00009803921568713051
+        "e2e_latency_s": 3.224,
+        "prefill_tokens_per_s": 394.16846652267816,
+        "decode_tokens_per_s": 44.65849387040054,
+        "time_to_first_token_s": 0.926,
+        "time_per_output_token_s": 0.022392156862746232,
+        "grammar_init_s": 0.099,
+        "grammar_per_token_s": 0.000029411764705882354
       }
     },
     "generated_output": "{\n  \"productName\": \"Quantum Processor QP-5000\",\n  \"productCode\": \"QP5K-2024\",\n  \"specifications\": {\n    \"size\": \"7nm\",\n    \"capacity\": \"64 quantum bits\",\n    \"powerConsumption\": \"20W\"\n  },\n  \"manufacturingDate\": \"2024-01-15\"\n}",
@@ -2470,13 +2470,13 @@
       "prompt_tokens": 369,
       "total_tokens": 432,
       "extra": {
-        "e2e_latency_s": 2.516,
-        "prefill_tokens_per_s": 352.7724665391773,
-        "decode_tokens_per_s": 43.032786885249344,
-        "time_to_first_token_s": 1.0460000000000582,
-        "time_per_output_token_s": 0.02323809523809338,
-        "grammar_init_s": 0.072,
-        "grammar_per_token_s": 0.00011111111111064914
+        "e2e_latency_s": 2.324,
+        "prefill_tokens_per_s": 398.05825242715946,
+        "decode_tokens_per_s": 45.35637149028267,
+        "time_to_first_token_s": 0.9270000000000582,
+        "time_per_output_token_s": 0.02204761904761813,
+        "grammar_init_s": 0.074,
+        "grammar_per_token_s": 0.00007936507936507937
       }
     },
     "generated_output": "{\n  \"requestID\": \"REQ12345\",\n  \"chemicalID\": \"ACN-321\",\n  \"quantity\": 50,\n  \"disposalMethod\": \"Incineration by EPA licensed contractor\"\n}",
@@ -2499,13 +2499,13 @@
       "prompt_tokens": 332,
       "total_tokens": 461,
       "extra": {
-        "e2e_latency_s": 3.823,
-        "prefill_tokens_per_s": 366.4459161147903,
-        "decode_tokens_per_s": 44.54419889502807,
-        "time_to_first_token_s": 0.906,
-        "time_per_output_token_s": 0.02244961240310055,
-        "grammar_init_s": 0.0900000000000291,
-        "grammar_per_token_s": 0.00003100775193843572
+        "e2e_latency_s": 3.742,
+        "prefill_tokens_per_s": 385.1508120649652,
+        "decode_tokens_per_s": 44.994768050227634,
+        "time_to_first_token_s": 0.862,
+        "time_per_output_token_s": 0.022224806201549936,
+        "grammar_init_s": 0.0919999999999418,
+        "grammar_per_token_s": 0.00006976744185956266
       }
     },
     "generated_output": "{\n  \"centerName\": \"Harmony Rehab Center\",\n  \"specialty\": \"Orthopedic and Neurological Rehabilitation\",\n  \"treatmentModalities\": [\n    \"Physical Therapy\",\n    \"Occupational Therapy\",\n    \"Speech Therapy\",\n    \"Aquatic Therapy\"\n  ],\n  \"insuranceAccepted\": [\n    \"Blue Cross Blue Shield\",\n    \"Medicare\",\n    \"Medicaid\",\n    \"UnitedHealthcare\"\n  ]\n}",
@@ -2528,13 +2528,13 @@
       "prompt_tokens": 372,
       "total_tokens": 486,
       "extra": {
-        "e2e_latency_s": 3.618,
-        "prefill_tokens_per_s": 355.3008595988539,
-        "decode_tokens_per_s": 44.54865181711506,
-        "time_to_first_token_s": 1.047,
-        "time_per_output_token_s": 0.022447368421053136,
-        "grammar_init_s": 0.097,
-        "grammar_per_token_s": 0.000052631578947368424
+        "e2e_latency_s": 3.507,
+        "prefill_tokens_per_s": 400.43057050592034,
+        "decode_tokens_per_s": 44.60093896713517,
+        "time_to_first_token_s": 0.929,
+        "time_per_output_token_s": 0.02242105263157944,
+        "grammar_init_s": 0.103,
+        "grammar_per_token_s": 0.00007017543859649122
       }
     },
     "generated_output": "{\n  \"applicationID\": \"CCB-981276\",\n  \"applicantDetails\": {\n    \"name\": \"Barry Allen\",\n    \"income\": 85000,\n    \"creditScore\": 750\n  },\n  \"loanType\": \"Home Improvement Loan\",\n  \"amountRequested\": 20000,\n  \"repaymentSchedule\": \"Monthly payments for 5 years\"\n}",
@@ -2557,13 +2557,13 @@
       "prompt_tokens": 309,
       "total_tokens": 379,
       "extra": {
-        "e2e_latency_s": 2.476,
-        "prefill_tokens_per_s": 357.63888888891296,
-        "decode_tokens_per_s": 43.695380774029296,
-        "time_to_first_token_s": 0.8639999999999418,
-        "time_per_output_token_s": 0.022885714285715942,
-        "grammar_init_s": 0.0749999999999418,
-        "grammar_per_token_s": 0.00012857142857059705
+        "e2e_latency_s": 2.352,
+        "prefill_tokens_per_s": 403.921568627451,
+        "decode_tokens_per_s": 44.331855604811565,
+        "time_to_first_token_s": 0.765,
+        "time_per_output_token_s": 0.022557142857143674,
+        "grammar_init_s": 0.081,
+        "grammar_per_token_s": 0.000014285714285714285
       }
     },
     "generated_output": "{\n  \"symbol\": \"TSLA\",\n  \"dateRange\": {\n    \"startDate\": \"2023-01-01\",\n    \"endDate\": \"2023-03-31\"\n  },\n  \"dataSource\": \"NASDAQ\"\n}",
@@ -2586,13 +2586,13 @@
       "prompt_tokens": 295,
       "total_tokens": 358,
       "extra": {
-        "e2e_latency_s": 2.259,
-        "prefill_tokens_per_s": 354.99398315285276,
-        "decode_tokens_per_s": 44.334975369456316,
-        "time_to_first_token_s": 0.8309999999999418,
-        "time_per_output_token_s": 0.022555555555556477,
-        "grammar_init_s": 0.06599999999994179,
-        "grammar_per_token_s": 0.000031746031746031745
+        "e2e_latency_s": 2.139,
+        "prefill_tokens_per_s": 388.66930171278,
+        "decode_tokens_per_s": 45.91836734693683,
+        "time_to_first_token_s": 0.759,
+        "time_per_output_token_s": 0.0217777777777787,
+        "grammar_init_s": 0.07,
+        "grammar_per_token_s": 0.00006349206349113956
       }
     },
     "generated_output": "{\n  \"type\": \"CarBattery\",\n  \"voltage\": 12.6,\n  \"capacity\": \"100Ah\",\n  \"dimensions\": \"229mm x 138mm x 208mm\"\n}",
@@ -2611,17 +2611,17 @@
   },
   {
     "usage": {
-      "completion_tokens": 127,
+      "completion_tokens": 128,
       "prompt_tokens": 357,
-      "total_tokens": 484,
+      "total_tokens": 485,
       "extra": {
-        "e2e_latency_s": 3.912,
-        "prefill_tokens_per_s": 346.6019417475728,
-        "decode_tokens_per_s": 44.312630844382426,
-        "time_to_first_token_s": 1.03,
-        "time_per_output_token_s": 0.02256692913385826,
-        "grammar_init_s": 0.083,
-        "grammar_per_token_s": 0.00012598425196758733
+        "e2e_latency_s": 3.86,
+        "prefill_tokens_per_s": 387.201735357942,
+        "decode_tokens_per_s": 43.86566141192773,
+        "time_to_first_token_s": 0.9219999999999418,
+        "time_per_output_token_s": 0.02279687499999909,
+        "grammar_init_s": 0.08699999999994179,
+        "grammar_per_token_s": 0.00010156250000136426
       }
     },
     "generated_output": "{\n  \"incidentID\": \"OUT20230418-001\",\n  \"startTime\": \"2023-04-18T15:30:00Z\",\n  \"endTime\": \"2023-04-18T18:45:00Z\",\n  \"servicesAffected\": [\n    \"Mobile Data\",\n    \"Voice Calls\",\n    \"SMS Messaging\"\n  ],\n  \"resolutionStatus\": \"Resolved\"\n}",
@@ -2644,13 +2644,13 @@
       "prompt_tokens": 232,
       "total_tokens": 343,
       "extra": {
-        "e2e_latency_s": 3.136,
-        "prefill_tokens_per_s": 341.17647058823525,
-        "decode_tokens_per_s": 45.56650246305308,
-        "time_to_first_token_s": 0.68,
-        "time_per_output_token_s": 0.021945945945946482,
-        "grammar_init_s": 0.088,
-        "grammar_per_token_s": 0.00006306306306253867
+        "e2e_latency_s": 3.124,
+        "prefill_tokens_per_s": 381.57894736842104,
+        "decode_tokens_per_s": 44.399999999998975,
+        "time_to_first_token_s": 0.608,
+        "time_per_output_token_s": 0.022522522522523042,
+        "grammar_init_s": 0.093,
+        "grammar_per_token_s": 0.00010810810810810811
       }
     },
     "generated_output": "{\n  \"orderId\": \"ORD10234\",\n  \"items\": [\n    {\n      \"name\": \"Wireless Mouse\",\n      \"price\": 15.99\n    },\n    {\n      \"name\": \"Bluetooth Keyboard\",\n      \"price\": 29.99\n    },\n    {\n      \"name\": \"Webcam HD\",\n      \"price\": 45.50\n    }\n  ]\n}",
@@ -2673,13 +2673,13 @@
       "prompt_tokens": 378,
       "total_tokens": 433,
       "extra": {
-        "e2e_latency_s": 2.27,
-        "prefill_tokens_per_s": 362.06896551724134,
-        "decode_tokens_per_s": 45.04504504504505,
-        "time_to_first_token_s": 1.044,
-        "time_per_output_token_s": 0.022199999999999998,
-        "grammar_init_s": 0.084,
-        "grammar_per_token_s": 0.0001272727272737856
+        "e2e_latency_s": 2.154,
+        "prefill_tokens_per_s": 405.14469453376205,
+        "decode_tokens_per_s": 45.342126957953305,
+        "time_to_first_token_s": 0.933,
+        "time_per_output_token_s": 0.022054545454546513,
+        "grammar_init_s": 0.09,
+        "grammar_per_token_s": 0.00007272727272621441
       }
     },
     "generated_output": "{\n  \"reportID\": \"BUG-001122\",\n  \"description\": \"The calendar view crashes when switching from week to month view.\",\n  \"severity\": \"high\",\n  \"status\": \"open\"\n}",
@@ -2702,13 +2702,13 @@
       "prompt_tokens": 352,
       "total_tokens": 451,
       "extra": {
-        "e2e_latency_s": 3.102,
-        "prefill_tokens_per_s": 371.7001055966209,
-        "decode_tokens_per_s": 46.26168224299066,
-        "time_to_first_token_s": 0.947,
-        "time_per_output_token_s": 0.021616161616161613,
-        "grammar_init_s": 0.084,
-        "grammar_per_token_s": 0.000060606060606060605
+        "e2e_latency_s": 3.137,
+        "prefill_tokens_per_s": 382.6086956521739,
+        "decode_tokens_per_s": 44.87760652764952,
+        "time_to_first_token_s": 0.92,
+        "time_per_output_token_s": 0.022282828282829445,
+        "grammar_init_s": 0.089,
+        "grammar_per_token_s": 0.00008080808080808081
       }
     },
     "generated_output": "{\n  \"policyId\": \"INS-2023-4567\",\n  \"basePremium\": 350.00,\n  \"riskFactors\": {\n    \"age\": 45,\n    \"location\": \"San Francisco, CA\",\n    \"vehicleType\": \"Sedan\"\n  },\n  \"totalPremium\": 420.00\n}",
@@ -2731,13 +2731,13 @@
       "prompt_tokens": 299,
       "total_tokens": 364,
       "extra": {
-        "e2e_latency_s": 2.324,
-        "prefill_tokens_per_s": 351.7647058823529,
-        "decode_tokens_per_s": 44.308111792774376,
-        "time_to_first_token_s": 0.85,
-        "time_per_output_token_s": 0.02256923076923077,
-        "grammar_init_s": 0.076,
-        "grammar_per_token_s": 0.0000923076923067968
+        "e2e_latency_s": 2.271,
+        "prefill_tokens_per_s": 392.3884514435695,
+        "decode_tokens_per_s": 43.2468396540236,
+        "time_to_first_token_s": 0.762,
+        "time_per_output_token_s": 0.02312307692307782,
+        "grammar_init_s": 0.077,
+        "grammar_per_token_s": 0.00010769230769051669
       }
     },
     "generated_output": "{\n  \"equipmentId\": \"BTX-2003\",\n  \"equipmentType\": \"centrifuge\",\n  \"location\": \"Room 5\",\n  \"maintenanceSchedule\": \"2023-07-22\"\n}",
@@ -2756,20 +2756,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 259,
+      "completion_tokens": 190,
       "prompt_tokens": 262,
-      "total_tokens": 521,
+      "total_tokens": 452,
       "extra": {
-        "e2e_latency_s": 6.738,
-        "prefill_tokens_per_s": 348.8681757656458,
-        "decode_tokens_per_s": 43.566021867115715,
-        "time_to_first_token_s": 0.751,
-        "time_per_output_token_s": 0.022953667953667694,
-        "grammar_init_s": 0.069,
-        "grammar_per_token_s": 0.00012741312741312746
+        "e2e_latency_s": 5.125,
+        "prefill_tokens_per_s": 383.601756954612,
+        "decode_tokens_per_s": 43.06436990027375,
+        "time_to_first_token_s": 0.683,
+        "time_per_output_token_s": 0.023221052631577994,
+        "grammar_init_s": 0.075,
+        "grammar_per_token_s": 0.00006315789473653576
       }
     },
-    "generated_output": "{\n  \"portName\": \"Harbor Bay Port\",\n  \"date\": \"2023-05-15\",\n  \"timeSlots\": [\n    \"08:00\",\n    \"08:30\",\n    \"09:00\",\n    \"09:30\",\n    \"10:00\",\n    \"10:30\",\n    \"11:00\",\n    \"11:30\",\n    \"12:00\",\n    \"12:30\",\n    \"13:00\",\n    \"13:30\",\n    \"14:00\",\n    \"14:30\",\n    \"15:00\",\n    \"15:30\",\n    \"16:00\",\n    \"16:30\",\n    \"17:00\",\n    \"17:30\",\n    \"18:00\",\n    \"18:30\",\n    \"19:00\",\n    \"19:30\"\n  ]\n}",
+    "generated_output": "{\n  \"portName\": \"Harbor Bay Port\",\n  \"date\": \"2023-05-15\",\n  \"timeSlots\": [\n    \"08:00\",\n    \"09:00\",\n    \"10:00\",\n    \"11:00\",\n    \"12:0jk; Table, if necessary. Here's a JSON object with the requested information: the date is formatted in the ISO 8601 standard (YYYY-MM-DD), and the time slots are in a 24-hour format. Remember, actual availability may vary, and this is a hypothetical scenario. Always contact the specific port'enquiry directly for accurate scheduling information. 🚢⏱️🗓️: `{ \"\n  ]\n}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'title': 'DockingTimeQuery', 'type': 'object', 'properties': {'portName': {'title': 'Port Name', 'type': 'string'}, 'date': {'title': 'Date', 'type': 'string', 'format': 'date'}, 'timeSlots': {'title': 'Time Slots', 'type': 'array', 'items': {'type': 'string', 'pattern': '^([01]?[0-9]|2[0-3]):[0-5][0-9]$'}}}, 'required': ['portName', 'date', 'timeSlots']}\n</schema>\n",
@@ -2789,13 +2789,13 @@
       "prompt_tokens": 255,
       "total_tokens": 310,
       "extra": {
-        "e2e_latency_s": 1.892,
-        "prefill_tokens_per_s": 370.63953488372096,
-        "decode_tokens_per_s": 45.833333333333336,
-        "time_to_first_token_s": 0.688,
-        "time_per_output_token_s": 0.021818181818181816,
-        "grammar_init_s": 0.0800000000000582,
-        "grammar_per_token_s": 0.000054545454545454546
+        "e2e_latency_s": 1.841,
+        "prefill_tokens_per_s": 413.29011345214906,
+        "decode_tokens_per_s": 45.00818330605779,
+        "time_to_first_token_s": 0.6170000000000582,
+        "time_per_output_token_s": 0.02221818181818076,
+        "grammar_init_s": 0.085,
+        "grammar_per_token_s": 0
       }
     },
     "generated_output": "{\n  \"productName\": \"Organic Red Apples\",\n  \"SKU\": \"APL-99217\",\n  \"price\": 3.99,\n  \"quantityInStock\": 150\n}",
@@ -2814,20 +2814,20 @@
   },
   {
     "usage": {
-      "completion_tokens": 107,
+      "completion_tokens": 120,
       "prompt_tokens": 338,
-      "total_tokens": 445,
+      "total_tokens": 458,
       "extra": {
-        "e2e_latency_s": 3.357,
-        "prefill_tokens_per_s": 356.5400843881857,
-        "decode_tokens_per_s": 44.788614483048384,
-        "time_to_first_token_s": 0.948,
-        "time_per_output_token_s": 0.022327102803737776,
-        "grammar_init_s": 0.049,
-        "grammar_per_token_s": 0.00013084112149532712
+        "e2e_latency_s": 3.597,
+        "prefill_tokens_per_s": 391.2037037037037,
+        "decode_tokens_per_s": 44.182621502207255,
+        "time_to_first_token_s": 0.864,
+        "time_per_output_token_s": 0.022633333333334293,
+        "grammar_init_s": 0.053,
+        "grammar_per_token_s": 0.00009999999999951495
       }
     },
-    "generated_output": "{\".FuelInventoryReport\": [{\"Fuel Type\": \"Diesel\",\"Quantity in Stock\": 5000,\"Reorder Level\": 1500},{\"Fuel Type\": \"Gasoline\",\"Quantity in Stock\": 7500,\"Reorder Level\": 2000},{\"Fuel Type\": \"Aviation Fuel\",\"Quantity in Stock\": 2500,\"Reorder Level\": 1000}]}",
+    "generated_output": "{\".@{\": \"FuelInventoryReport\",\"FuelType\": \".@{\",\"quantityInStock\": 2500,\"reorderLevel\": 1000,\"gasoline\": {\"quantityInStock\": 7500,\"reorderLevel\": 2000},\"diesel\": {\"quantityInStock\": 5000,\"reorderLevel\": 1500},\"aviation\": {\"quantityInStock\": 2500,\"reorderLevel\": 1000}}",
     "prompt": [
       {
         "content": "You are a helpful assistant that answers in JSON. Here's the json schema you must adhere to:\n<schema>\n{'FuelInventoryReport': {'title': 'FuelInventoryReport', 'type': 'object', 'properties': {'fuelType': {'title': 'Fuel Type', 'type': 'string'}, 'quantityInStock': {'title': 'Quantity in Stock', 'type': 'number'}, 'reorderLevel': {'title': 'Reorder Level', 'type': 'number'}}, 'required': ['fuelType', 'quantityInStock', 'reorderLevel']}}\n</schema>\n",
@@ -2847,13 +2847,13 @@
       "prompt_tokens": 369,
       "total_tokens": 432,
       "extra": {
-        "e2e_latency_s": 2.392,
-        "prefill_tokens_per_s": 359.2989289191821,
-        "decode_tokens_per_s": 46.35761589403973,
-        "time_to_first_token_s": 1.027,
-        "time_per_output_token_s": 0.02157142857142857,
-        "grammar_init_s": 0.086,
-        "grammar_per_token_s": 0.00019047619047803837
+        "e2e_latency_s": 2.358,
+        "prefill_tokens_per_s": 392.1360255047822,
+        "decode_tokens_per_s": 44.61756373937677,
+        "time_to_first_token_s": 0.941,
+        "time_per_output_token_s": 0.022412698412698412,
+        "grammar_init_s": 0.093,
+        "grammar_per_token_s": 0.000015873015873015872
       }
     },
     "generated_output": "{\n  \"shipmentID\": \"SH12345\",\n  \"componentID\": \"COMP-4567\",\n  \"status\": \"in transit\",\n  \"estimatedDelivery\": \"2023-05-20\"\n}",
@@ -2876,13 +2876,13 @@
       "prompt_tokens": 307,
       "total_tokens": 370,
       "extra": {
-        "e2e_latency_s": 2.269,
-        "prefill_tokens_per_s": 363.7440758293839,
-        "decode_tokens_per_s": 44.397463002115984,
-        "time_to_first_token_s": 0.844,
-        "time_per_output_token_s": 0.0225238095238086,
-        "grammar_init_s": 0.074,
-        "grammar_per_token_s": 0.00011111111110833931
+        "e2e_latency_s": 2.184,
+        "prefill_tokens_per_s": 401.83246073298426,
+        "decode_tokens_per_s": 44.64918497519306,
+        "time_to_first_token_s": 0.764,
+        "time_per_output_token_s": 0.02239682539682632,
+        "grammar_init_s": 0.07200000000005821,
+        "grammar_per_token_s": 0.00004761904761904762
       }
     },
     "generated_output": "{\n  \"productID\": \"MOIST-12345\",\n  \"stockQuantity\": 20,\n  \"restockDate\": \"2023-04-15\",\n  \"supplier\": \"Healthy Skin Co\"\n}",
